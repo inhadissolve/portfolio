@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>김찬혁 | Backend Developer Portfolio</title>
+<meta name="description" content="아이디어를 실행으로 옮기는 백엔드 개발자 김찬혁의 포트폴리오. FastAPI · Node.js · PostgreSQL 기반 프로젝트와 경험을 소개합니다.">
+<meta name="theme-color" content="#3457ff">
+<meta name="color-scheme" content="light dark">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="김찬혁 | Backend Developer Portfolio">
+<meta property="og:description" content="아이디어를 실행으로 옮기는 백엔드 개발자 김찬혁의 포트폴리오. FastAPI · Node.js · PostgreSQL 기반 프로젝트와 경험을 소개합니다.">
+<meta property="og:image" content="assets/og-image.png">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="김찬혁 | Backend Developer Portfolio">
+<meta name="twitter:description" content="아이디어를 실행으로 옮기는 백엔드 개발자 김찬혁의 포트폴리오">
+<meta name="twitter:image" content="assets/og-image.png">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/favicon.svg">
+
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard.css">
+<link rel="stylesheet" href="css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "김찬혁",
+  "alternateName": "Chanhyuk Kim",
+  "jobTitle": "Backend Developer",
+  "email": "mailto:dissolve1882@naver.com",
+  "url": "https://github.com/inhadissolve",
+  "sameAs": [
+    "https://github.com/inhadissolve",
+    "https://blog.naver.com/dissolve_chan"
+  ],
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "인하대학교 전기전자공학부"
+  }
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#home" class="logo">CH<span>.</span></a>
+
+    <nav class="nav-links" id="navLinks" aria-label="주요 메뉴">
+      <a href="#about" data-nav>About</a>
+      <a href="#skills" data-nav>Skills</a>
+      <a href="#experience" data-nav>Experience</a>
+      <a href="#projects" data-nav>Projects</a>
+      <a href="#awards" data-nav>Awards</a>
+      <a href="#contact" data-nav>Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="themeToggle" class="icon-btn" type="button" aria-label="다크 모드 전환">
+        <svg class="icon icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.2"></circle><path d="M12 2.5v2.4M12 19.1v2.4M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.9 19.1l1.7-1.7M17.4 6.6l1.7-1.7"></path></svg>
+        <svg class="icon icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 14.5A8.5 8.5 0 1 1 9.5 3.5a7 7 0 0 0 11 11Z"></path></svg>
+      </button>
+      <button id="navToggle" class="icon-btn nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <span class="blob blob-1"></span>
+      <span class="blob blob-2"></span>
+      <span class="blob blob-3"></span>
+    </div>
+
+    <div class="container hero-inner">
+      <p class="eyebrow reveal">BACKEND DEVELOPER</p>
+      <h1 class="hero-title reveal">아이디어를 실행으로 옮기는<br><span class="text-accent">백엔드 개발자</span>, 김찬혁입니다.</h1>
+      <p class="hero-sub reveal">FastAPI · Node.js · PostgreSQL로 API를 설계하고 AI 서비스를 연동하며, 단순한 기능 구현이 아닌 <strong>서비스 전체 흐름</strong>을 고려한 개발을 지향합니다.</p>
+
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+        <a href="assets/resume.pdf" download="김찬혁_이력서.pdf" class="btn btn-outline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"></path><path d="m7 11 5 5 5-5"></path><path d="M5 21h14"></path></svg>
+          이력서 다운로드
+        </a>
+      </div>
+
+      <div class="hero-links reveal">
+        <a href="https://github.com/inhadissolve" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.09 3.29 9.39 7.86 10.91.57.1.79-.25.79-.55v-2.1c-3.2.7-3.87-1.36-3.87-1.36-.53-1.33-1.29-1.69-1.29-1.69-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.77 2.72 1.26 3.38.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.8 1.19 1.83 1.19 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .3.22.66.8.55A10.97 10.97 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5Z"></path></svg>
+        </a>
+        <a href="mailto:dissolve1882@naver.com" class="social-link" aria-label="이메일">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"></rect><path d="m3.5 6 8.5 7 8.5-7"></path></svg>
+        </a>
+        <a href="https://blog.naver.com/dissolve_chan" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="기술 블로그">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V6a2 2 0 0 1 2-2h8.5L20 8.5V19.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 19.5Z"></path><path d="M14 4v4.5h4.5"></path><path d="M8 13h8M8 16.5h5"></path></svg>
+        </a>
+        <a href="https://app.notion.com/p/0f72a03e23d9832d8dc381d08168d0c7" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Notion 포트폴리오">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5h10A2.5 2.5 0 0 1 19.5 6v14L16 17l-3 3-3-3-3.5 3V6A2.5 2.5 0 0 1 7 3.5Z"></path><path d="M9 8.5h6M9 12h6"></path></svg>
+        </a>
+      </div>
+
+      <dl class="hero-stats reveal">
+        <div><dt>11</dt><dd>프로젝트</dd></div>
+        <div><dt>5</dt><dd>수상 경력</dd></div>
+        <div><dt>1년</dt><dd>부트캠프 수료</dd></div>
+      </dl>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="아래로 스크롤">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v15"></path><path d="m5 12 7 7 7-7"></path></svg>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <p class="eyebrow reveal">ABOUT ME</p>
+      <h2 class="section-title reveal">개발자 김찬혁을 소개합니다</h2>
+
+      <div class="about-grid reveal">
+        <div class="about-avatar">
+          <div class="avatar-circle">찬</div>
+          <p class="avatar-caption">인하대학교 전기전자공학부<br>Backend Developer</p>
+        </div>
+
+        <div class="about-content">
+          <blockquote class="about-quote">
+            아이디어가 생기면 바로 실행에 옮기고, 구체화하면서 빠르게 완성해나가는 백엔드 개발자입니다. FastAPI · Node.js · PostgreSQL 기반 API 설계부터 AI 서비스 연동, 실운영 웹서비스 구현까지 경험하며, 단순한 기능 구현이 아닌 서비스 전체 흐름을 고려한 개발을 지향합니다. 사용자 기록 수집, 세션 관리, AI 결과 연동처럼 서비스 핵심 흐름과 직결되는 기능에서 실질적으로 기여하는 것을 중요하게 생각합니다.
+          </blockquote>
+
+          <ul class="info-list">
+            <li><span class="info-icon" aria-hidden="true">🏢</span>인하대학교 전기전자공학부 재학</li>
+            <li><span class="info-icon" aria-hidden="true">📧</span><a href="mailto:dissolve1882@naver.com">dissolve1882@naver.com</a></li>
+            <li><span class="info-icon" aria-hidden="true">📞</span>010-3738-1882</li>
+            <li><span class="info-icon" aria-hidden="true">🐙</span><a href="https://github.com/inhadissolve" target="_blank" rel="noopener noreferrer">github.com/inhadissolve</a></li>
+            <li><span class="info-icon" aria-hidden="true">✍️</span><a href="https://blog.naver.com/dissolve_chan" target="_blank" rel="noopener noreferrer">blog.naver.com/dissolve_chan</a></li>
+            <li><span class="info-icon" aria-hidden="true">📄</span><a href="https://app.notion.com/p/0f72a03e23d9832d8dc381d08168d0c7" target="_blank" rel="noopener noreferrer">Notion 포트폴리오</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <p class="eyebrow reveal">TECH STACK</p>
+      <h2 class="section-title reveal">기술 스택</h2>
+
+      <div class="skills-grid reveal">
+        <div class="skill-card">
+          <h3 class="skill-title">Language</h3>
+          <ul class="chip-list">
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/python/3776AB" alt="" loading="lazy" onerror="this.remove()"><span>Python</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/typescript/3178C6" alt="" loading="lazy" onerror="this.remove()"><span>TypeScript</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="" loading="lazy" onerror="this.remove()"><span>JavaScript</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3 class="skill-title">Backend</h3>
+          <ul class="chip-list">
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/fastapi/009688" alt="" loading="lazy" onerror="this.remove()"><span>FastAPI</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/nodedotjs/339933" alt="" loading="lazy" onerror="this.remove()"><span>Node.js</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/express/9aa3b2" alt="" loading="lazy" onerror="this.remove()"><span>Express</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/nestjs/E0234E" alt="" loading="lazy" onerror="this.remove()"><span>NestJS</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3 class="skill-title">Database / Infra</h3>
+          <ul class="chip-list">
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/postgresql/4169E1" alt="" loading="lazy" onerror="this.remove()"><span>PostgreSQL</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/sqlite/003B57" alt="" loading="lazy" onerror="this.remove()"><span>SQLite</span></li>
+            <li class="chip chip-text"><span>SQLAlchemy</span></li>
+            <li class="chip chip-text"><span>Alembic</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/prisma/9aa3b2" alt="" loading="lazy" onerror="this.remove()"><span>Prisma</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/docker/2496ED" alt="" loading="lazy" onerror="this.remove()"><span>Docker</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/supabase/3FCF8E" alt="" loading="lazy" onerror="this.remove()"><span>Supabase</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3 class="skill-title">AI / Data</h3>
+          <ul class="chip-list">
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/tensorflow/FF6F00" alt="" loading="lazy" onerror="this.remove()"><span>TensorFlow / Keras</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/pandas/9aa3b2" alt="" loading="lazy" onerror="this.remove()"><span>Pandas</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/numpy/9aa3b2" alt="" loading="lazy" onerror="this.remove()"><span>NumPy</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/opencv/5C3EE8" alt="" loading="lazy" onerror="this.remove()"><span>OpenCV</span></li>
+            <li class="chip chip-text"><span>MediaPipe</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/huggingface/FFD21E" alt="" loading="lazy" onerror="this.remove()"><span>HuggingFace API</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/openai/412991" alt="" loading="lazy" onerror="this.remove()"><span>OpenAI API</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3 class="skill-title">Frontend</h3>
+          <ul class="chip-list">
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/react/61DAFB" alt="" loading="lazy" onerror="this.remove()"><span>React</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/nextdotjs/9aa3b2" alt="" loading="lazy" onerror="this.remove()"><span>Next.js</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/tailwindcss/38BDF8" alt="" loading="lazy" onerror="this.remove()"><span>TailwindCSS</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3 class="skill-title">Tools</h3>
+          <ul class="chip-list">
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/git/F05032" alt="" loading="lazy" onerror="this.remove()"><span>Git</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/github/9aa3b2" alt="" loading="lazy" onerror="this.remove()"><span>GitHub</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/vercel/9aa3b2" alt="" loading="lazy" onerror="this.remove()"><span>Vercel</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/railway/9aa3b2" alt="" loading="lazy" onerror="this.remove()"><span>Railway</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <p class="eyebrow reveal">EXPERIENCE</p>
+      <h2 class="section-title reveal">경험 · 활동</h2>
+
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-content">
+            <p class="timeline-period">2026.03 ~ 진행 중</p>
+            <h3 class="timeline-title">UMC 10th – Backend(Node.js) 파트 챌린저</h3>
+            <ul class="timeline-list">
+              <li>Node.js/Express 기반 REST API 설계, DB 연동 등 주차별 스터디 미션 수행 및 팀원과 트러블슈팅 공유</li>
+              <li>기존 FastAPI 중심 개발에서 Node.js/Express 생태계로 역량을 확장하며 기술 선택의 관점 확보</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-content">
+            <p class="timeline-period">2025.01 ~ 2025.11</p>
+            <h3 class="timeline-title">KSEB 부트캠프 4기 수료</h3>
+            <ul class="timeline-list">
+              <li>1년간 백엔드 개발 역량을 집중적으로 학습, 미니프로젝트 대상 · 팀 프로젝트 우수상 수상</li>
+              <li>꾸준한 참여도를 인정받아 전체 수료생 중 8명 우수 교육생으로 선정</li>
+            </ul>
+            <p class="callout">💡 단일 프로젝트 성과가 아니라 1년간의 학습 태도와 프로젝트 결과 모두를 인정받은 수료였습니다. 꾸준히 완수하는 것이 결국 가장 강한 포트폴리오가 된다는 것을 확인한 경험이었습니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <p class="eyebrow reveal">PROJECTS</p>
+      <h2 class="section-title reveal">주요 프로젝트</h2>
+
+      <div class="projects-grid reveal">
+
+        <article class="project-card">
+          <div class="card-head">
+            <div>
+              <p class="card-period">2025.11 ~ 진행 중 · 개인 프로젝트 · 1인 개발</p>
+              <h3 class="card-title">📚 사무엘학교 학습 웹서비스</h3>
+            </div>
+            <a href="https://github.com/inhadissolve/samuel-school" target="_blank" rel="noopener noreferrer" class="card-link" aria-label="GitHub 저장소 보기">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg>
+            </a>
+          </div>
+          <ul class="card-desc">
+            <li>성경 암송 훈련 학습 웹서비스를 기획부터 React+TypeScript 프론트엔드, FastAPI+PostgreSQL 백엔드, OpenAI 기반 AI 채점까지 1인으로 개발해 실사용자 대상 운영 중</li>
+            <li>시험 목록 조회 API의 N+1 쿼리를 배치 조회로 제거하고 limit/offset 페이지네이션을 적용해 조회 성능 개선</li>
+            <li>AI 서술형 채점에 예산 · 주간 생성 한도 가드레일을 적용해 실 운영 비용을 통제</li>
+          </ul>
+          <div class="card-tech">
+            <span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">FastAPI</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">OpenAI API</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="card-head">
+            <div>
+              <p class="card-period">2026.06 ~ 진행 중 · UMC 10th 팀 프로젝트 · Backend Team Lead</p>
+              <h3 class="card-title">🏠 HomeFit | 청년 주거 · 금융 의사결정 서비스</h3>
+            </div>
+            <a href="https://github.com/umc-homefit/backend" target="_blank" rel="noopener noreferrer" class="card-link" aria-label="GitHub 저장소 보기">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg>
+            </a>
+          </div>
+          <ul class="card-desc">
+            <li>청년안심주택 · 공공임대 공고와 소득 · 자산 조건을 연결해 입주 가능성을 분석하는 서비스의 백엔드 팀장으로 팀원 API 계약과 일정을 조율</li>
+            <li>NestJS + PostgreSQL + Prisma 기반 백엔드에서 공고 데이터, DB · API 계약, Railway 배포 환경을 담당</li>
+            <li>Stable Hash + Prisma Upsert로 재실행해도 중복되지 않는 Seed 설계, Docker · Testcontainers 기반 E2E 검증 구축</li>
+          </ul>
+          <div class="card-tech">
+            <span class="tech-tag">NestJS</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Prisma</span><span class="tech-tag">Railway</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="card-head">
+            <div>
+              <p class="card-period">2025.07 ~ 2025.09 · 팀 프로젝트 · 팀장</p>
+              <h3 class="card-title">🤟 수담(手談) | 실시간 양방향 수어 인식 · 번역 서비스</h3>
+            </div>
+            <a href="https://github.com/KSEB-MEGA-CREW" target="_blank" rel="noopener noreferrer" class="card-link" aria-label="GitHub 저장소 보기">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg>
+            </a>
+          </div>
+          <div class="badge-row">
+            <span class="badge badge-award">🏆 KSEB 팀 프로젝트 우수상</span>
+            <span class="badge badge-award">🏆 오픈소스 SW 페스티벌 최우수상 (인하대 총장상)</span>
+          </div>
+          <ul class="card-desc">
+            <li>MediaPipe keypoint 추출 → 딥러닝 분류 → FastAPI 추론 서버로 이어지는 AI 파이프라인을 설계하고 팀장으로서 6개 파트 일정을 조율</li>
+            <li>none 라벨 수집, confidence threshold, sliding window 적용으로 실시간 예측 안정화</li>
+          </ul>
+          <div class="card-tech">
+            <span class="tech-tag">Python</span><span class="tech-tag">MediaPipe</span><span class="tech-tag">TensorFlow/Keras</span><span class="tech-tag">FastAPI</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="card-head">
+            <div>
+              <p class="card-period">2026 ~ · 팀 프로젝트 · Backend 담당</p>
+              <h3 class="card-title">🌱 GreenBrain(아노익시) | AI 기반 탄소중립 실천 웹서비스</h3>
+            </div>
+            <a href="https://github.com/GreenBrain-Inha/BE_GreenBrain" target="_blank" rel="noopener noreferrer" class="card-link" aria-label="GitHub 저장소 보기">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg>
+            </a>
+          </div>
+          <ul class="card-desc">
+            <li>온보딩 정보 기반 챌린지 인증 사진 업로드 · 피드 공유 · 토큰 보상으로 이어지는 서비스의 FastAPI+PostgreSQL+Supabase Storage 백엔드 개발</li>
+          </ul>
+          <div class="card-tech">
+            <span class="tech-tag">FastAPI</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Supabase</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="card-head">
+            <div>
+              <p class="card-period">2025.09 ~ 2025.12 · 기업 연계 프로젝트</p>
+              <h3 class="card-title">🏭 RealGain | 산업 데이터 기반 이상탐지 AI</h3>
+            </div>
+            <a href="https://github.com/inhadissolve/Real_Gain" target="_blank" rel="noopener noreferrer" class="card-link" aria-label="GitHub 저장소 보기">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg>
+            </a>
+          </div>
+          <div class="badge-row">
+            <span class="badge badge-award">🏆 탄소중립 Innovation Academy 5기 대상 (1위)</span>
+          </div>
+          <ul class="card-desc">
+            <li>산업 설비 진동 데이터를 Orbit 이미지로 변환해 ResNet18로 정상/비정상을 분류하고 Grad-CAM으로 판단 근거를 시각화</li>
+            <li>CLI 기반 --json/--show_cam 옵션으로 백엔드 연동용 추론 모듈을 구성하고 Precision · Recall · F1 기반 평가 체계 구축</li>
+          </ul>
+          <div class="card-tech">
+            <span class="tech-tag">Python</span><span class="tech-tag">TensorFlow</span><span class="tech-tag">Grad-CAM</span><span class="tech-tag">Pandas</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="card-head">
+            <div>
+              <p class="card-period">2025.03 ~ 2025.06 · 팀 프로젝트 · AI/BE 담당</p>
+              <h3 class="card-title">📰 IssueOne | AI 개인 맞춤 뉴스 요약 서비스</h3>
+            </div>
+            <a href="https://github.com/inhadissolve/ISSUE_ONE" target="_blank" rel="noopener noreferrer" class="card-link" aria-label="GitHub 저장소 보기">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg>
+            </a>
+          </div>
+          <div class="badge-row">
+            <span class="badge badge-award">🏆 KSEB 미니프로젝트 대상 (1위)</span>
+          </div>
+          <ul class="card-desc">
+            <li>RSS 수집 → 정제 → 요약 → 응답 파이프라인을 FastAPI+SQLite로 구현</li>
+            <li>KoBART 로컬 추론을 HuggingFace/OpenAI API 연계로 전환해 메모리 제약 배포 환경 문제 해결</li>
+          </ul>
+          <div class="card-tech">
+            <span class="tech-tag">FastAPI</span><span class="tech-tag">SQLite</span><span class="tech-tag">HuggingFace API</span><span class="tech-tag">OpenAI API</span>
+          </div>
+        </article>
+
+      </div>
+
+      <h3 id="other-projects" class="sub-heading reveal">그 외 프로젝트</h3>
+      <div class="other-projects-grid reveal">
+
+        <article class="other-card">
+          <div class="other-card-top">
+            <h4>⏱️ FocusLink</h4>
+            <span class="status-dot" title="1인 풀스택"></span>
+          </div>
+          <p class="other-period">2026 ~ · 1인 풀스택 개발</p>
+          <p class="other-desc">공부 집중 관리 Android 앱. FastAPI 백엔드와 Compose 기반 Android 클라이언트를 함께 개발했습니다.</p>
+          <div class="card-tech"><span class="tech-tag">FastAPI</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">SQLAlchemy</span><span class="tech-tag">Docker</span></div>
+          <a href="https://github.com/inhadissolve" target="_blank" rel="noopener noreferrer" class="other-link">GitHub ↗</a>
+        </article>
+
+        <article class="other-card">
+          <div class="other-card-top">
+            <h4>🎯 CueKit</h4>
+            <span class="status-dot" title="개발 중"></span>
+          </div>
+          <p class="other-period">2026 ~ · 개인 MVP 개발 중</p>
+          <p class="other-desc">AI 기반 퀴즈 생성 · QR 라이브 룸 SaaS. AI로 퀴즈를 생성하고 QR로 실시간 참여 룸을 여는 인터랙티브 플랫폼입니다.</p>
+          <div class="card-tech"><span class="tech-tag">Next.js</span><span class="tech-tag">Supabase</span><span class="tech-tag">shadcn/ui</span><span class="tech-tag">TailwindCSS</span></div>
+        </article>
+
+        <article class="other-card">
+          <div class="other-card-top">
+            <h4>🚗 교회 차량 운영 웹시스템</h4>
+            <span class="status-dot" title="실운영"></span>
+          </div>
+          <p class="other-period">2026 · 1인 개발 · 실운영</p>
+          <p class="other-desc">차량 운행 일정과 주차 위치를 관리하는 웹 시스템을 기획부터 개발까지 담당해 실제 운영 중입니다.</p>
+          <div class="card-tech"><span class="tech-tag">Next.js</span><span class="tech-tag">React</span><span class="tech-tag">TailwindCSS</span></div>
+          <a href="https://github.com/inhadissolve" target="_blank" rel="noopener noreferrer" class="other-link">GitHub ↗</a>
+        </article>
+
+        <article class="other-card">
+          <div class="other-card-top">
+            <h4>🐝 꿀단지 레이스</h4>
+            <span class="status-dot" title="실운영"></span>
+          </div>
+          <p class="other-period">2026 · 3인 팀 · 실운영</p>
+          <p class="other-desc">성경읽기 진행 상황을 실시간 레이스로 시각화하는 대항전 게임 서비스입니다.</p>
+          <div class="card-tech"><span class="tech-tag">React</span><span class="tech-tag">Firebase</span><span class="tech-tag">Firestore</span></div>
+          <a href="https://github.com/inhadissolve" target="_blank" rel="noopener noreferrer" class="other-link">GitHub ↗</a>
+        </article>
+
+        <article class="other-card">
+          <div class="other-card-top">
+            <h4>⛪ 농선부 통합 관리</h4>
+            <span class="status-dot" title="실운영"></span>
+          </div>
+          <p class="other-period">2026 · 1인 개발 · 실운영</p>
+          <p class="other-desc">청각장애인 선교부의 출석, 수어교실, 당번 일정을 통합 관리하는 서비스입니다.</p>
+          <div class="card-tech"><span class="tech-tag">React</span><span class="tech-tag">Firebase</span><span class="tech-tag">ExcelJS</span></div>
+          <a href="https://github.com/inhadissolve" target="_blank" rel="noopener noreferrer" class="other-link">GitHub ↗</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- AWARDS -->
+  <section id="awards" class="section">
+    <div class="container">
+      <p class="eyebrow reveal">AWARDS</p>
+      <h2 class="section-title reveal">수상 · 성과</h2>
+
+      <ul class="awards-list reveal">
+        <li class="award-item">
+          <span class="award-icon">🥇</span>
+          <div>
+            <p class="award-title">탄소중립 Innovation Academy 5기 기업연계 프로젝트 <strong>대상 (1위)</strong></p>
+            <p class="award-date">2025.09 ~ 2025.12</p>
+          </div>
+        </li>
+        <li class="award-item">
+          <span class="award-icon">🏅</span>
+          <div>
+            <p class="award-title">오픈소스 SW 페스티벌 <strong>최우수상 · 인하대학교 총장상 (1위)</strong></p>
+            <p class="award-date">2025.09 ~ 2025.10</p>
+          </div>
+        </li>
+        <li class="award-item">
+          <span class="award-icon">🥉</span>
+          <div>
+            <p class="award-title">KSEB 팀 프로젝트 <strong>우수상 (3위)</strong></p>
+            <p class="award-date">2025.06 ~ 2025.08</p>
+          </div>
+        </li>
+        <li class="award-item">
+          <span class="award-icon">🥇</span>
+          <div>
+            <p class="award-title">KSEB 미니프로젝트 <strong>대상 (1위)</strong></p>
+            <p class="award-date">2025.03 ~ 2025.06</p>
+          </div>
+        </li>
+        <li class="award-item">
+          <span class="award-icon">🏆</span>
+          <div>
+            <p class="award-title">KSEB 부트캠프 4기 <strong>개인 우수 교육생</strong> · 전체 수료생 중 8명 선정</p>
+            <p class="award-date">2025.01 ~ 2025.11</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="education-note reveal">
+        <span class="info-icon" aria-hidden="true">🎓</span>
+        <span><strong>인하대학교</strong> 전기전자공학부 재학</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK STYLE -->
+  <section id="work-style" class="section section-alt">
+    <div class="container">
+      <p class="eyebrow reveal">HOW I WORK</p>
+      <h2 class="section-title reveal">함께 일하는 방식</h2>
+
+      <div class="work-grid reveal">
+        <div class="work-card">
+          <span class="work-num">01</span>
+          <h3>맡은 바는 끝까지 책임지고 완수합니다</h3>
+          <p>수어 번역 서비스 팀장을 맡아 기획부터 시연까지 완주했고, 참여한 프로젝트마다 결과로 증명해왔습니다. 마감 기한과 팀과의 약속을 무엇보다 우선시합니다.</p>
+        </div>
+        <div class="work-card">
+          <span class="work-num">02</span>
+          <h3>문서로 말하는 개발을 합니다</h3>
+          <p>API 명세 · ERD · README · 트러블슈팅을 정리해 기획 · 디자인 · 프론트엔드 누구나 이해할 수 있는 개발 산출물을 만듭니다.</p>
+        </div>
+        <div class="work-card">
+          <span class="work-num">03</span>
+          <h3>빠른 소통과 활발한 토론으로 함께 성장합니다</h3>
+          <p>막히는 부분이나 결정이 필요한 상황은 혼자 끌고 가지 않고 먼저 공유합니다. 아이디어가 생기면 바로 실행에 옮기며, 토론을 통해 팀과 더 빠르게 완성해갑니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="container contact-inner reveal">
+      <p class="eyebrow">CONTACT</p>
+      <h2 class="section-title">함께 이야기 나눠요</h2>
+      <p class="contact-text">새로운 기회, 협업 제안 모두 환영합니다. 편하게 연락 주세요.</p>
+      <a href="mailto:dissolve1882@naver.com" class="btn btn-primary btn-lg">dissolve1882@naver.com</a>
+      <div class="contact-links">
+        <a href="https://github.com/inhadissolve" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://blog.naver.com/dissolve_chan" target="_blank" rel="noopener noreferrer">Blog</a>
+        <a href="https://app.notion.com/p/0f72a03e23d9832d8dc381d08168d0c7" target="_blank" rel="noopener noreferrer">Notion</a>
+        <a href="assets/resume.pdf" download="김찬혁_이력서.pdf">Resume</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>© <span id="year">2026</span> 김찬혁 (Chanhyuk Kim). All rights reserved.</span>
+    <button id="toTop" class="to-top" type="button" aria-label="맨 위로">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"></path><path d="m5 12 7-7 7 7"></path></svg>
+    </button>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
