@@ -371,6 +371,13 @@
           <div class="card-tech">
             <span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">FastAPI</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">OpenAI API</span>
           </div>
+          <button class="card-more" type="button" aria-expanded="false">
+            <span class="card-more-label">자세히 보기</span>
+            <svg class="card-more-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+          </button>
+          <div class="card-detail">
+            <p>실제 서비스(samuel-school.vercel.app)와 API를 분리 배포해 운영 중이며, 기수가 바뀔 때마다 달라진 점을 페이지에 정리해 안내합니다. 로컬 개발 환경은 기본적으로 SQLite로 동작하도록 분리해 실습 중 실 운영 데이터가 섞이지 않도록 설계했고, AI 스토리 시험은 출제와 채점의 추론 강도를 다르게 설정해 품질과 비용의 균형을 맞췄습니다.</p>
+          </div>
         </article>
 
         <article class="project-card">
@@ -387,6 +394,13 @@
           </ul>
           <div class="card-tech">
             <span class="tech-tag">NestJS</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Prisma</span><span class="tech-tag">Railway</span>
+          </div>
+          <button class="card-more" type="button" aria-expanded="false">
+            <span class="card-more-label">자세히 보기</span>
+            <svg class="card-more-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+          </button>
+          <div class="card-detail">
+            <p>공고 탐색 → 상세 → 사용자 조건 입력 → 입주 가능성 분석 → 금융상품 확인 → 관심 공고 저장으로 이어지는 전체 흐름 중 Notice 도메인(공고 목록·필터·저장 공고·주택형·첨부파일·크롤링)을 전담했습니다. MVP는 수요가 높은 청년안심주택 6개 단지를 우선 대상으로 하며, Docker Compose로 DB 준비 확인 → 마이그레이션 → API 기동 순서를 자동화해 팀원 누구나 동일한 환경에서 실행할 수 있게 했습니다.</p>
           </div>
         </article>
 
@@ -408,6 +422,13 @@
           <div class="card-tech">
             <span class="tech-tag">Python</span><span class="tech-tag">MediaPipe</span><span class="tech-tag">TensorFlow/Keras</span><span class="tech-tag">FastAPI</span>
           </div>
+          <button class="card-more" type="button" aria-expanded="false">
+            <span class="card-more-label">자세히 보기</span>
+            <svg class="card-more-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+          </button>
+          <div class="card-detail">
+            <p>세션 단위로 프레임을 순차 전송받는 /predict/frame(슬라이딩 윈도우)과 .npy 파일을 한 번에 올리는 /predict/npy 두 가지 추론 경로를 제공하고, /health로 윈도우 크기·feature 차원·활성 세션 수를 그대로 노출해 운영 상태를 확인할 수 있게 했습니다. 오래된 세션을 정리하는 엔드포인트도 함께 만들었고, Docker Compose 기반으로 패키징해 MIT 라이선스로 공개했습니다.</p>
+          </div>
         </article>
 
         <article class="project-card">
@@ -422,6 +443,13 @@
           </ul>
           <div class="card-tech">
             <span class="tech-tag">FastAPI</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Supabase</span>
+          </div>
+          <button class="card-more" type="button" aria-expanded="false">
+            <span class="card-more-label">자세히 보기</span>
+            <svg class="card-more-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+          </button>
+          <div class="card-detail">
+            <p>AI 챗봇 사용량을 ecologits로 탄소 토큰으로 환산해 차감하고, 토큰이 소진되면 생활 습관 기반 챌린지를 자동 생성해 인증 사진 업로드 시 토큰을 즉시 +20 회복(커뮤니티 좋아요 3개당 +20 추가, 하루 최대 60)하는 흐름에서 챌린지 생성·인증·파일 업로드 라우터를 담당했습니다.</p>
           </div>
         </article>
 
@@ -442,6 +470,13 @@
           <div class="card-tech">
             <span class="tech-tag">Python</span><span class="tech-tag">TensorFlow</span><span class="tech-tag">Grad-CAM</span><span class="tech-tag">Pandas</span>
           </div>
+          <button class="card-more" type="button" aria-expanded="false">
+            <span class="card-more-label">자세히 보기</span>
+            <svg class="card-more-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+          </button>
+          <div class="card-detail">
+            <p>설비에서 수집한 24채널 BIN 파일의 마지막 10초 구간을 RCP 4개 채널쌍별로 오빗 이미지로 변환해 각각 정상/이상 확률을 산출하고, 4개 채널 중 하나라도 이상으로 판정되면 전체를 이상으로 처리하는 안전 우선 로직을 적용했습니다. 백엔드에서 subprocess로 바로 연동할 수 있도록 --json 출력 옵션을 별도로 제공했습니다.</p>
+          </div>
         </article>
 
         <article class="project-card">
@@ -460,6 +495,13 @@
           </ul>
           <div class="card-tech">
             <span class="tech-tag">FastAPI</span><span class="tech-tag">SQLite</span><span class="tech-tag">HuggingFace API</span><span class="tech-tag">OpenAI API</span>
+          </div>
+          <button class="card-more" type="button" aria-expanded="false">
+            <span class="card-more-label">자세히 보기</span>
+            <svg class="card-more-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+          </button>
+          <div class="card-detail">
+            <p>뉴스 수집(/run-news), 인기 키워드(/trending-keywords), 기사 검색(/search-articles), AI 결론 요약(/summarize-conclusion) 엔드포인트로 파이프라인을 구성했고, render.yaml을 통해 실제 클라우드(Render)에 배포까지 진행했습니다.</p>
           </div>
         </article>
 
