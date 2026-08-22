@@ -24,7 +24,7 @@
 
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard.css">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=20260823">
 
 <script type="application/ld+json">
 {
@@ -142,7 +142,7 @@
 
       <dl class="hero-stats reveal">
         <div><dt>11</dt><dd>프로젝트</dd></div>
-        <div><dt>5</dt><dd>수상 경력</dd></div>
+        <div><dt>6</dt><dd>수상 경력</dd></div>
         <div><dt>1년</dt><dd>부트캠프 수료</dd></div>
       </dl>
     </div>
@@ -274,7 +274,9 @@
             <ul class="timeline-list">
               <li>주차별 Node.js 미션을 완주하고, HomeFit 백엔드 팀장으로 도메인별 API 계약 · PR · Android 연동 일정을 조율</li>
               <li>NestJS · Prisma 기반 개발에서 Railway 배포, AWS Terraform · GitHub Actions OIDC · RDS 데이터 이관까지 서비스 생명주기를 경험</li>
+              <li>2026.08.22 부산 BEXCO 데모데이에서 13:00부터 18:00까지 방문자 대상 HomeFit 서비스를 운영</li>
             </ul>
+            <p class="callout">🏅 프로젝트 리딩과 UMC 활동 성과를 인정받아 <strong>UMC 10th 베스트 챌린저</strong>로 선정되었습니다.</p>
           </div>
         </div>
 
@@ -390,6 +392,10 @@
               <h3 class="card-title"><img class="card-title-icon" src="assets/icon-homefit.png" alt="">HomeFit | 청년 주거 · 금융 의사결정 서비스</h3>
             </div>
           </div>
+          <div class="badge-row">
+            <span class="badge badge-award">🏅 UMC 10th 베스트 챌린저</span>
+            <span class="badge badge-event">부산 BEXCO 데모데이 운영</span>
+          </div>
           <ul class="card-desc">
             <li>백엔드 팀장으로 도메인별 API 계약 · PR 우선순위를 관리하고 Android 팀과 테스트 계정 · 예상 결과를 정리해 통합 테스트를 주도</li>
             <li>공식 출처 기반 6개 단지 · 7개 연동 공고를 Stable Hash + Prisma Upsert로 멱등 Seed화하고 Docker · Testcontainers E2E로 검증</li>
@@ -410,6 +416,7 @@
             <svg class="card-more-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
           </button>
           <div class="card-detail">
+            <p><strong>2026년 8월 22일 부산 BEXCO 데모데이에서 13:00~18:00 동안 방문자 대상 서비스를 운영했습니다.</strong> Android 앱의 로그인부터 공고 탐색, 입주 가능성 분석, 금융상품 확인까지 실제 사용 흐름을 현장에서 지원했습니다.</p>
             <p>공고 탐색 → 상세 → 조건 입력 → 입주 가능성 분석 → 금융상품 확인 → 관심 공고 저장 흐름에서 Notice · DB · Infra를 맡았습니다. VPC, ALB, EC2 Auto Scaling, RDS, ECR, S3, Secrets Manager, CloudWatch를 Terraform으로 관리하고 장기 Access Key 대신 GitHub Actions OIDC를 적용했습니다.</p>
             <p>Railway PostgreSQL 18의 사용자 · 공고 · 분석 데이터를 private RDS PostgreSQL 18로 이관한 뒤 Migration 이력과 핵심 테이블 건수를 교차 검증했습니다. 데모 종료 후에는 RDS dump와 Terraform State를 백업하고 AWS 과금 리소스를 모두 회수해 복구 가능성과 비용 통제를 함께 확보했습니다.</p>
           </div>
@@ -582,6 +589,13 @@
       <h2 class="section-title reveal">수상 · 성과</h2>
 
       <ul class="awards-list reveal">
+        <li class="award-item">
+          <span class="award-icon">🏅</span>
+          <div>
+            <p class="award-title">UMC 10th Backend(Node.js) 파트 <strong>베스트 챌린저 선정</strong></p>
+            <p class="award-date">2026.08</p>
+          </div>
+        </li>
         <li class="award-item">
           <span class="award-icon">🥇</span>
           <div>
