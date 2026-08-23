@@ -135,16 +135,25 @@
   /* ---------------- Project case study dialogs ---------------- */
   var dialogTriggers = Array.prototype.slice.call(document.querySelectorAll("[data-project-dialog]"));
   var lastDialogTrigger = null;
+  var DIALOG_CLOSE_DURATION = 180;
 
-  function closeProjectDialog(dialog) {
-    if (!dialog) return;
-    if (typeof dialog.close === "function") {
+  function finishProjectDialogClose(dialog) {
+    dialog.classList.remove("is-closing");
+    if (typeof dialog.close === "function" && dialog.open) {
       dialog.close();
     } else {
       dialog.removeAttribute("open");
       document.body.classList.remove("dialog-open");
       if (lastDialogTrigger) lastDialogTrigger.focus();
+      lastDialogTrigger = null;
     }
+  }
+
+  function closeProjectDialog(dialog) {
+    if (!dialog || !dialog.hasAttribute("open") || dialog.classList.contains("is-closing")) return;
+    if (reduceMotion) return finishProjectDialogClose(dialog);
+    dialog.classList.add("is-closing");
+    window.setTimeout(function () { finishProjectDialogClose(dialog); }, DIALOG_CLOSE_DURATION);
   }
 
   dialogTriggers.forEach(function (trigger) {
@@ -154,6 +163,7 @@
 
     trigger.addEventListener("click", function () {
       lastDialogTrigger = trigger;
+      dialog.classList.remove("is-closing");
       closeNav();
       document.body.classList.remove("nav-open");
       document.body.classList.add("dialog-open");
@@ -172,6 +182,11 @@
 
     dialog.addEventListener("click", function (event) {
       if (event.target === dialog) closeProjectDialog(dialog);
+    });
+
+    dialog.addEventListener("cancel", function (event) {
+      event.preventDefault();
+      closeProjectDialog(dialog);
     });
 
     dialog.addEventListener("close", function () {
