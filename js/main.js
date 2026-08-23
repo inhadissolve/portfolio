@@ -132,6 +132,55 @@
     });
   });
 
+  /* ---------------- Project case study dialogs ---------------- */
+  var dialogTriggers = Array.prototype.slice.call(document.querySelectorAll("[data-project-dialog]"));
+  var lastDialogTrigger = null;
+
+  function closeProjectDialog(dialog) {
+    if (!dialog) return;
+    if (typeof dialog.close === "function") {
+      dialog.close();
+    } else {
+      dialog.removeAttribute("open");
+      document.body.classList.remove("dialog-open");
+      if (lastDialogTrigger) lastDialogTrigger.focus();
+    }
+  }
+
+  dialogTriggers.forEach(function (trigger) {
+    var dialogId = trigger.getAttribute("data-project-dialog");
+    var dialog = dialogId ? document.getElementById(dialogId) : null;
+    if (!dialog) return;
+
+    trigger.addEventListener("click", function () {
+      lastDialogTrigger = trigger;
+      closeNav();
+      document.body.classList.remove("nav-open");
+      document.body.classList.add("dialog-open");
+      if (typeof dialog.showModal === "function") {
+        dialog.showModal();
+      } else {
+        dialog.setAttribute("open", "");
+      }
+      var closeButton = dialog.querySelector("[data-dialog-close]");
+      if (closeButton) closeButton.focus();
+    });
+
+    dialog.querySelectorAll("[data-dialog-close]").forEach(function (button) {
+      button.addEventListener("click", function () { closeProjectDialog(dialog); });
+    });
+
+    dialog.addEventListener("click", function (event) {
+      if (event.target === dialog) closeProjectDialog(dialog);
+    });
+
+    dialog.addEventListener("close", function () {
+      document.body.classList.remove("dialog-open");
+      if (lastDialogTrigger) lastDialogTrigger.focus();
+      lastDialogTrigger = null;
+    });
+  });
+
   /* ---------------- Footer year ---------------- */
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
