@@ -576,6 +576,8 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
 
 /* ---------- HomeFit case study dialog ---------- */
 .project-dialog {
+  inset: 0;
+  margin: auto;
   width: min(1120px, calc(100% - 32px));
   max-width: 1120px;
   max-height: 92vh;
