@@ -382,7 +382,15 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
   color: var(--text);
 }
 .chip-icon { width: 15px; height: 15px; object-fit: contain; }
-.chip-text { padding-left: .9rem; }
+.chip-icon-wide { width: 22px; }
+.chip-icon-symbol {
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 15px;
+  font-size: .9rem;
+  line-height: 1;
+}
+[data-theme="dark"] .chip-icon-monochrome { filter: invert(1); }
 
 /* ---------- Timeline ---------- */
 .timeline { position: relative; padding-left: 2rem; }
