@@ -118,20 +118,6 @@
     }
   }
 
-  /* ---------------- Project card "자세히 보기" toggle ---------------- */
-  var moreButtons = Array.prototype.slice.call(document.querySelectorAll(".card-more"));
-  moreButtons.forEach(function (btn) {
-    var detail = btn.nextElementSibling;
-    if (!detail || !detail.classList.contains("card-detail")) return;
-    btn.addEventListener("click", function () {
-      var isOpen = detail.classList.toggle("open");
-      btn.classList.toggle("is-open", isOpen);
-      btn.setAttribute("aria-expanded", String(isOpen));
-      var label = btn.querySelector(".card-more-label");
-      if (label) label.textContent = isOpen ? "접기" : "자세히 보기";
-    });
-  });
-
   /* ---------------- Project case study dialogs ---------------- */
   var dialogTriggers = Array.prototype.slice.call(document.querySelectorAll("[data-project-dialog]"));
   var lastDialogTrigger = null;

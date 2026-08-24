@@ -24,7 +24,7 @@
 
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard.css">
-<link rel="stylesheet" href="css/style.css?v=20260824-3">
+<link rel="stylesheet" href="css/style.css?v=20260824-4">
 
 <script type="application/ld+json">
 {
@@ -379,13 +379,10 @@
           <div class="card-tech">
             <span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">FastAPI</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">OpenAI API</span>
           </div>
-          <button class="card-more" type="button" aria-expanded="false">
+          <button class="card-more card-more-dialog" type="button" data-project-dialog="samuelDialog" aria-haspopup="dialog" aria-controls="samuelDialog">
             <span class="card-more-label">자세히 보기</span>
             <svg class="card-more-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
           </button>
-          <div class="card-detail">
-            <p>실제 서비스(samuel-school.vercel.app)와 API를 분리 배포해 운영 중이며, 기수가 바뀔 때마다 달라진 점을 페이지에 정리해 안내합니다. 관리자 대시보드에서 계정 기준 방문·학습·기능 사용량, 시간대별 최고 동시 접속과 AI 비용을 집계하며 개인별 접속 기록은 보관하지 않습니다. 로컬 개발 환경은 SQLite로 분리하고, AI 시험은 출제와 채점의 추론 강도를 다르게 설정해 데이터 안전성과 품질·비용의 균형을 맞췄습니다.</p>
-          </div>
         </article>
 
         <article class="project-card">
@@ -438,13 +435,10 @@
           <div class="card-tech">
             <span class="tech-tag">Python</span><span class="tech-tag">MediaPipe</span><span class="tech-tag">TensorFlow/Keras</span><span class="tech-tag">FastAPI</span>
           </div>
-          <button class="card-more" type="button" aria-expanded="false">
+          <button class="card-more card-more-dialog" type="button" data-project-dialog="sudamDialog" aria-haspopup="dialog" aria-controls="sudamDialog">
             <span class="card-more-label">자세히 보기</span>
             <svg class="card-more-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
           </button>
-          <div class="card-detail">
-            <p>세션 단위로 프레임을 순차 전송받는 /predict/frame(슬라이딩 윈도우)과 .npy 파일을 한 번에 올리는 /predict/npy 두 가지 추론 경로를 제공하고, /health로 윈도우 크기·feature 차원·활성 세션 수를 그대로 노출해 운영 상태를 확인할 수 있게 했습니다. 오래된 세션을 정리하는 엔드포인트도 함께 만들었고, Docker Compose 기반으로 패키징해 MIT 라이선스로 공개했습니다.</p>
-          </div>
         </article>
 
         <article class="project-card">
@@ -460,13 +454,10 @@
           <div class="card-tech">
             <span class="tech-tag">FastAPI</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Supabase</span>
           </div>
-          <button class="card-more" type="button" aria-expanded="false">
+          <button class="card-more card-more-dialog" type="button" data-project-dialog="greenbrainDialog" aria-haspopup="dialog" aria-controls="greenbrainDialog">
             <span class="card-more-label">자세히 보기</span>
             <svg class="card-more-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
           </button>
-          <div class="card-detail">
-            <p>AI 챗봇 사용량을 ecologits로 탄소 토큰으로 환산해 차감하고, 토큰이 소진되면 생활 습관 기반 챌린지를 자동 생성해 인증 사진 업로드 시 토큰을 즉시 +20 회복(커뮤니티 좋아요 3개당 +20 추가, 하루 최대 60)하는 흐름에서 챌린지 생성·인증·파일 업로드 라우터를 담당했습니다.</p>
-          </div>
         </article>
 
         <article class="project-card">
@@ -486,13 +477,10 @@
           <div class="card-tech">
             <span class="tech-tag">Python</span><span class="tech-tag">TensorFlow</span><span class="tech-tag">Grad-CAM</span><span class="tech-tag">Pandas</span>
           </div>
-          <button class="card-more" type="button" aria-expanded="false">
+          <button class="card-more card-more-dialog" type="button" data-project-dialog="realgainDialog" aria-haspopup="dialog" aria-controls="realgainDialog">
             <span class="card-more-label">자세히 보기</span>
             <svg class="card-more-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
           </button>
-          <div class="card-detail">
-            <p>설비에서 수집한 24채널 BIN 파일의 마지막 10초 구간을 RCP 4개 채널쌍별로 오빗 이미지로 변환해 각각 정상/이상 확률을 산출하고, 4개 채널 중 하나라도 이상으로 판정되면 전체를 이상으로 처리하는 안전 우선 로직을 적용했습니다. 백엔드에서 subprocess로 바로 연동할 수 있도록 --json 출력 옵션을 별도로 제공했습니다.</p>
-          </div>
         </article>
 
         <article class="project-card">
@@ -512,13 +500,10 @@
           <div class="card-tech">
             <span class="tech-tag">FastAPI</span><span class="tech-tag">SQLite</span><span class="tech-tag">HuggingFace API</span><span class="tech-tag">OpenAI API</span>
           </div>
-          <button class="card-more" type="button" aria-expanded="false">
+          <button class="card-more card-more-dialog" type="button" data-project-dialog="issueoneDialog" aria-haspopup="dialog" aria-controls="issueoneDialog">
             <span class="card-more-label">자세히 보기</span>
             <svg class="card-more-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
           </button>
-          <div class="card-detail">
-            <p>뉴스 수집(/run-news), 인기 키워드(/trending-keywords), 기사 검색(/search-articles), AI 결론 요약(/summarize-conclusion) 엔드포인트로 파이프라인을 구성했고, render.yaml을 통해 실제 클라우드(Render)에 배포까지 진행했습니다.</p>
-          </div>
         </article>
 
       </div>
@@ -844,6 +829,545 @@
   </div>
 </dialog>
 
+<dialog class="project-dialog" id="samuelDialog" aria-labelledby="samuelDialogTitle">
+  <div class="project-dialog-shell">
+    <header class="project-dialog-header">
+      <div class="project-dialog-heading">
+        <img class="project-dialog-logo" src="assets/icon-samuel.png" alt="사무엘학교 아이콘" loading="lazy" decoding="async">
+        <div>
+          <p class="project-dialog-eyebrow">PROJECT CASE STUDY</p>
+          <h2 id="samuelDialogTitle">사무엘학교</h2>
+        </div>
+      </div>
+      <button class="project-dialog-close" type="button" data-dialog-close aria-label="사무엘학교 상세 닫기">×</button>
+    </header>
+
+    <div class="project-dialog-body">
+      <section class="case-hero" aria-labelledby="samuelCaseHeadline">
+        <div class="case-hero-copy">
+          <div class="case-meta-row">
+            <span>2025.11–현재</span>
+            <span>기획 · 개발 · 운영 1인 담당</span>
+            <span>v3.78</span>
+          </div>
+          <p class="case-kicker">제44기 실사용자 대상 성경 암송 학습 웹서비스</p>
+          <h3 id="samuelCaseHeadline">학습 기능을 만드는 데서 끝내지 않고, 운영 지표와 AI 비용까지 직접 책임졌습니다.</h3>
+          <p class="case-lead">React · TypeScript 프론트엔드와 FastAPI · PostgreSQL 백엔드, OpenAI 기반 출제·채점을 한 저장소에서 설계하고 실제 학습 현장에 배포해 개선하고 있습니다.</p>
+        </div>
+        <img class="case-mascot case-project-icon" src="assets/icon-samuel.png" alt="사무엘학교 서비스 아이콘" loading="lazy" decoding="async">
+      </section>
+
+      <div class="case-metrics" aria-label="사무엘학교 주요 지표">
+        <div><strong>449명</strong><span>전체 회원</span></div>
+        <div><strong>16,496회</strong><span>14일 학습 완료</span></div>
+        <div><strong>36명</strong><span>최고 동시 접속</span></div>
+        <div><strong>1,016개</strong><span>자동화 테스트</span></div>
+      </div>
+
+      <section class="case-section" aria-labelledby="samuelScreensTitle">
+        <div class="case-section-heading">
+          <p class="case-section-index">01 · PRODUCT</p>
+          <h3 id="samuelScreensTitle">학습과 복습이 이어지는 화면</h3>
+          <p>전체 구절 쓰기부터 빈칸·키워드·주제·암송 훈련까지 학습 난이도를 선택하고, 틀린 구절과 학습 기록으로 자연스럽게 복습하도록 구성했습니다.</p>
+        </div>
+        <div class="case-product-grid">
+          <figure class="case-product-card">
+            <a href="assets/projects/samuel/main.webp" target="_blank" rel="noopener noreferrer" aria-label="사무엘학교 학습 모드 화면 크게 보기">
+              <img src="assets/projects/samuel/main.webp" alt="사무엘학교 학습 모드와 과정 선택 화면" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>학습 모드</strong><span>과정 · 범위 · 난이도별 훈련 선택</span></figcaption>
+          </figure>
+          <figure class="case-product-card">
+            <a href="assets/projects/samuel/quiz.webp" target="_blank" rel="noopener noreferrer" aria-label="사무엘학교 빈칸 퀴즈 화면 크게 보기">
+              <img src="assets/projects/samuel/quiz.webp" alt="사무엘학교 빈칸 맞추기 퀴즈 화면" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>빈칸 퀴즈</strong><span>핵심 단어를 입력하며 반복 학습</span></figcaption>
+          </figure>
+          <figure class="case-product-card">
+            <a href="assets/projects/samuel/wrong-notes.webp" target="_blank" rel="noopener noreferrer" aria-label="사무엘학교 오답노트 화면 크게 보기">
+              <img src="assets/projects/samuel/wrong-notes.webp" alt="사무엘학교 오답노트 목록 화면" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>오답노트</strong><span>틀린 구절을 시험과 암송 훈련으로 재학습</span></figcaption>
+          </figure>
+          <figure class="case-product-card">
+            <a href="assets/projects/samuel/mypage.webp" target="_blank" rel="noopener noreferrer" aria-label="사무엘학교 학습 기록 화면 크게 보기">
+              <img src="assets/projects/samuel/mypage.webp" alt="사무엘학교 최근 30일 학습 추이와 달력" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>나의 기록</strong><span>학습 시간과 점수 추이를 달력으로 확인</span></figcaption>
+          </figure>
+        </div>
+        <p class="case-media-hint">이미지를 선택하면 원본 크기로 볼 수 있습니다.</p>
+      </section>
+
+      <section class="case-section" aria-labelledby="samuelBuildTitle">
+        <div class="case-section-heading">
+          <p class="case-section-index">02 · IMPLEMENTATION</p>
+          <h3 id="samuelBuildTitle">운영에서 발견한 문제를 제품과 코드로 되돌렸습니다.</h3>
+        </div>
+        <div class="case-role-grid">
+          <article>
+            <span class="case-role-number">01</span>
+            <h4>학습 엔진 · 전 과정 개발</h4>
+            <p>네 가지 학습 모드와 오답노트, 학습 기록, 랭킹, 관리자 기능을 React와 FastAPI로 연결하고 PostgreSQL 운영 데이터와 SQLite 로컬 환경을 분리했습니다.</p>
+          </article>
+          <article>
+            <span class="case-role-number">02</span>
+            <h4>조회 성능 · 운영 관측성</h4>
+            <p>시험 목록의 N+1 쿼리를 배치 조회로 제거하고 페이지네이션을 적용했습니다. 방문·학습·기능 사용량과 시간대별 최고 동시 접속을 관리자 화면에서 확인합니다.</p>
+          </article>
+          <article>
+            <span class="case-role-number">03</span>
+            <h4>AI 품질 · 비용 가드레일</h4>
+            <p>출제와 채점의 추론 강도를 분리하고, 추정 비용 $6 주의 · $8 절약 · $9 호출 중지와 사용자별 주간 생성 한도로 품질과 예산을 함께 관리했습니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="samuelQualityTitle">
+        <div class="case-section-heading">
+          <p class="case-section-index">03 · QUALITY &amp; OPERATIONS</p>
+          <h3 id="samuelQualityTitle">한 번 겪은 장애를 다시 겪지 않기 위한 테스트</h3>
+          <p>백엔드 pytest 685개와 프론트 Node 테스트 331개를 유지하며, 서버 요청 형식뿐 아니라 실제 화면이 보내는 파라미터 형태까지 회귀 테스트에 포함했습니다.</p>
+        </div>
+        <div class="case-result-callout">
+          <strong>실사용 운영</strong>
+          <p>프론트와 API를 분리 배포하고, 버전 변경 때마다 변경 내역 · README · 앱 메타데이터를 함께 갱신하는 릴리스 규칙으로 운영하고 있습니다.</p>
+        </div>
+      </section>
+
+      <nav class="case-links" aria-label="사무엘학교 프로젝트 관련 링크">
+        <a class="case-link case-link-primary" href="https://samuel-school.vercel.app" target="_blank" rel="noopener noreferrer">서비스 열기</a>
+        <a class="case-link" href="https://samuel-school-api.vercel.app/docs" target="_blank" rel="noopener noreferrer">API 문서</a>
+        <a class="case-link" href="https://github.com/inhadissolve/samuel-school" target="_blank" rel="noopener noreferrer">GitHub (private)</a>
+      </nav>
+    </div>
+  </div>
+</dialog>
+
+<dialog class="project-dialog" id="sudamDialog" aria-labelledby="sudamDialogTitle">
+  <div class="project-dialog-shell">
+    <header class="project-dialog-header">
+      <div class="project-dialog-heading">
+        <img class="project-dialog-logo" src="assets/icon-sudam.png" alt="수담 서비스 아이콘" loading="lazy" decoding="async">
+        <div>
+          <p class="project-dialog-eyebrow">PROJECT CASE STUDY</p>
+          <h2 id="sudamDialogTitle">수담(手談)</h2>
+        </div>
+      </div>
+      <button class="project-dialog-close" type="button" data-dialog-close aria-label="수담 상세 닫기">×</button>
+    </header>
+
+    <div class="project-dialog-body">
+      <section class="case-hero" aria-labelledby="sudamCaseHeadline">
+        <div class="case-hero-copy">
+          <div class="case-meta-row">
+            <span>2025.07–2025.09</span>
+            <span>팀장 · AI/FastAPI</span>
+            <span>6개 파트 일정 조율</span>
+          </div>
+          <p class="case-kicker">실시간 양방향 수어 인식 · 번역 서비스</p>
+          <h3 id="sudamCaseHeadline">카메라 프레임에서 수어 특징을 추출해 안정적인 실시간 번역 결과까지 연결했습니다.</h3>
+          <p class="case-lead">MediaPipe 기반 특징 추출과 딥러닝 분류, FastAPI 추론 서버를 하나의 파이프라인으로 설계하고 팀장으로서 AI · Front · Back · Unity 등 파트 간 일정을 조율했습니다.</p>
+        </div>
+        <img class="case-mascot case-project-icon" src="assets/icon-sudam.png" alt="두 손과 하트로 구성된 수담 아이콘" loading="lazy" decoding="async">
+      </section>
+
+      <div class="case-metrics" aria-label="수담 주요 지표">
+        <div><strong>194차원</strong><span>프레임 특징</span></div>
+        <div><strong>10프레임</strong><span>Sliding Window</span></div>
+        <div><strong>2개</strong><span>추론 경로</span></div>
+        <div><strong>2회</strong><span>프로젝트 수상</span></div>
+      </div>
+
+      <section class="case-section" aria-labelledby="sudamFlowTitle">
+        <div class="case-section-heading">
+          <p class="case-section-index">01 · INFERENCE FLOW</p>
+          <h3 id="sudamFlowTitle">수어 동작이 번역 결과가 되기까지</h3>
+          <p>연속 프레임을 그대로 분류하지 않고, 손 · 얼굴 · 자세의 핵심 좌표를 정규화한 뒤 시간 흐름을 함께 보는 방식으로 실시간 흔들림을 줄였습니다.</p>
+        </div>
+        <div class="case-flow-list" aria-label="수담 추론 처리 순서">
+          <article><span>01</span><strong>카메라 입력</strong><p>세션 단위 프레임 수신</p></article>
+          <article><span>02</span><strong>MediaPipe</strong><p>194차원 keypoint 추출</p></article>
+          <article><span>03</span><strong>시간 윈도우</strong><p>최근 10프레임 누적</p></article>
+          <article><span>04</span><strong>딥러닝 분류</strong><p>threshold와 none 라벨 적용</p></article>
+          <article><span>05</span><strong>번역 출력</strong><p>텍스트 · 음성 흐름으로 전달</p></article>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="sudamBuildTitle">
+        <div class="case-section-heading">
+          <p class="case-section-index">02 · IMPLEMENTATION</p>
+          <h3 id="sudamBuildTitle">실시간성과 운영 가능성을 함께 다뤘습니다.</h3>
+        </div>
+        <div class="case-role-grid">
+          <article>
+            <span class="case-role-number">01</span>
+            <h4>예측 안정화</h4>
+            <p>의미 없는 동작을 none 라벨로 학습하고 confidence threshold와 sliding window를 적용해 프레임마다 예측이 바뀌는 현상을 완화했습니다.</p>
+          </article>
+          <article>
+            <span class="case-role-number">02</span>
+            <h4>두 가지 추론 API</h4>
+            <p>실시간 프레임용 <code>/predict/frame</code>과 전처리된 NPY 파일용 <code>/predict/npy</code>를 분리해 클라이언트와 모델 검증 환경을 모두 지원했습니다.</p>
+          </article>
+          <article>
+            <span class="case-role-number">03</span>
+            <h4>세션 · 배포 관리</h4>
+            <p><code>/health</code>에 window 크기와 feature 차원, 활성 세션을 노출하고 오래된 세션 정리 API와 Docker Compose 패키징을 구성했습니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section case-award-section" aria-labelledby="sudamAwardTitle">
+        <div class="case-award-copy">
+          <p class="case-section-index">03 · RECOGNITION</p>
+          <h3 id="sudamAwardTitle">기술 구현과 팀 운영을 함께 인정받았습니다.</h3>
+          <p>모델 정확도만이 아니라 서비스 형태의 데모, 파트 간 통합, 발표까지 완성해 두 번의 프로젝트 성과로 이어졌습니다.</p>
+          <ul>
+            <li>KSEB 팀 프로젝트 우수상</li>
+            <li>인하대학교 오픈소스 SW 페스티벌 최우수상(총장상)</li>
+            <li>AI 추론 서버 MIT 라이선스 공개</li>
+          </ul>
+        </div>
+        <figure class="case-award-media case-award-media-portrait">
+          <img src="assets/projects/sudam/award.webp" alt="K-SoftVation Showcase에서 우수상을 수상한 수담 팀 단체사진" loading="lazy" decoding="async">
+          <figcaption>K-Software Empowerment Bootcamp 팀 프로젝트 우수상</figcaption>
+        </figure>
+      </section>
+
+      <nav class="case-links" aria-label="수담 프로젝트 관련 링크">
+        <a class="case-link case-link-primary" href="https://github.com/KSEB-MEGA-CREW" target="_blank" rel="noopener noreferrer">공식 GitHub</a>
+        <a class="case-link" href="https://github.com/KSEB-MEGA-CREW/AI" target="_blank" rel="noopener noreferrer">AI · 추론 서버</a>
+        <a class="case-link" href="https://github.com/KSEB-MEGA-CREW/Front" target="_blank" rel="noopener noreferrer">Frontend</a>
+        <a class="case-link" href="https://github.com/KSEB-MEGA-CREW/Back" target="_blank" rel="noopener noreferrer">Backend</a>
+      </nav>
+    </div>
+  </div>
+</dialog>
+
+<dialog class="project-dialog" id="greenbrainDialog" aria-labelledby="greenbrainDialogTitle">
+  <div class="project-dialog-shell">
+    <header class="project-dialog-header">
+      <div class="project-dialog-heading">
+        <img class="project-dialog-logo" src="assets/projects/greenbrain/icon.webp" alt="GreenBrain 아이콘" loading="lazy" decoding="async">
+        <div>
+          <p class="project-dialog-eyebrow">PROJECT CASE STUDY</p>
+          <h2 id="greenbrainDialogTitle">GreenBrain</h2>
+        </div>
+      </div>
+      <button class="project-dialog-close" type="button" data-dialog-close aria-label="GreenBrain 상세 닫기">×</button>
+    </header>
+
+    <div class="project-dialog-body">
+      <section class="case-hero" aria-labelledby="greenbrainCaseHeadline">
+        <div class="case-hero-copy">
+          <div class="case-meta-row">
+            <span>2026</span>
+            <span>Backend 담당</span>
+            <span>FastAPI · PostgreSQL</span>
+          </div>
+          <p class="case-kicker">AI 기반 탄소중립 실천 웹서비스</p>
+          <h3 id="greenbrainCaseHeadline">AI 사용으로 소모한 탄소 토큰을 일상 챌린지로 회복하는 보상 루프를 연결했습니다.</h3>
+          <p class="case-lead">챌린지 생성과 사진 인증, 파일 업로드를 맡아 사용자의 생활 습관에 맞는 실천 과제가 생성되고 인증 결과가 토큰 회복으로 이어지도록 백엔드를 구현했습니다.</p>
+        </div>
+        <img class="case-mascot case-project-icon" src="assets/projects/greenbrain/icon.webp" alt="새싹과 자연을 표현한 GreenBrain 아이콘" loading="lazy" decoding="async">
+      </section>
+
+      <div class="case-metrics" aria-label="GreenBrain 주요 정책">
+        <div><strong>+20</strong><span>사진 인증 보상</span></div>
+        <div><strong>3개</strong><span>추가 보상 좋아요</span></div>
+        <div><strong>60</strong><span>일일 추가 보상 한도</span></div>
+        <div><strong>3단계</strong><span>담당 핵심 흐름</span></div>
+      </div>
+
+      <section class="case-section" aria-labelledby="greenbrainScreensTitle">
+        <div class="case-section-heading">
+          <p class="case-section-index">01 · PRODUCT</p>
+          <h3 id="greenbrainScreensTitle">탄소 토큰을 보여주는 AI 채팅 경험</h3>
+          <p>사용자는 AI 채팅에서 남은 탄소 토큰을 확인하고, 토큰이 부족하면 실천 챌린지와 커뮤니티 피드로 이동해 다시 회복합니다.</p>
+        </div>
+        <div class="case-product-grid">
+          <figure class="case-product-card">
+            <a href="assets/projects/greenbrain/login.webp" target="_blank" rel="noopener noreferrer" aria-label="GreenBrain 로그인 화면 크게 보기">
+              <img src="assets/projects/greenbrain/login.webp" alt="GreenBrain 로그인 화면" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>로그인</strong><span>탄소 책임 서비스의 진입 화면</span></figcaption>
+          </figure>
+          <figure class="case-product-card">
+            <a href="assets/projects/greenbrain/chat.webp" target="_blank" rel="noopener noreferrer" aria-label="GreenBrain AI 채팅 화면 크게 보기">
+              <img src="assets/projects/greenbrain/chat.webp" alt="탄소 토큰 잔액과 챌린지 진입점을 보여주는 GreenBrain AI 채팅 화면" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>AI 채팅</strong><span>토큰 잔액과 실천 챌린지 연결</span></figcaption>
+          </figure>
+        </div>
+        <p class="case-media-hint">공개 GitHub Pages 프로토타입을 실제 렌더링한 화면입니다.</p>
+      </section>
+
+      <section class="case-section" aria-labelledby="greenbrainFlowTitle">
+        <div class="case-section-heading">
+          <p class="case-section-index">02 · RESPONSIBILITY LOOP</p>
+          <h3 id="greenbrainFlowTitle">사용량을 제한하는 대신 실천으로 회복하게 했습니다.</h3>
+          <p>AI 요청의 탄소량을 ecologits로 계산한 뒤 토큰을 차감하고, 소진 시 사용자의 생활 습관에 맞는 챌린지를 제시하는 구조입니다.</p>
+        </div>
+        <div class="case-flow-list case-flow-list-six" aria-label="GreenBrain 탄소 책임 보상 흐름">
+          <article><span>01</span><strong>AI 채팅</strong><p>사용자 질문 전송</p></article>
+          <article><span>02</span><strong>탄소 계산</strong><p>ecologits 사용량 환산</p></article>
+          <article><span>03</span><strong>토큰 차감</strong><p>잔액과 사용량 기록</p></article>
+          <article><span>04</span><strong>챌린지 생성</strong><p>생활 습관 기반 추천</p></article>
+          <article><span>05</span><strong>사진 인증</strong><p>수행 증빙 업로드</p></article>
+          <article><span>06</span><strong>토큰 회복</strong><p>즉시 +20, 참여 보상</p></article>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="greenbrainBuildTitle">
+        <div class="case-section-heading">
+          <p class="case-section-index">03 · IMPLEMENTATION</p>
+          <h3 id="greenbrainBuildTitle">담당한 백엔드 구현</h3>
+        </div>
+        <div class="case-role-grid">
+          <article>
+            <span class="case-role-number">01</span>
+            <h4>개인화 챌린지 생성</h4>
+            <p>온보딩에서 수집한 이동 · 식습관 · 주거 정보를 바탕으로 토큰 소진 시 수행 가능한 생활 습관 챌린지를 생성하는 서비스를 구현했습니다.</p>
+          </article>
+          <article>
+            <span class="case-role-number">02</span>
+            <h4>인증 · 파일 업로드</h4>
+            <p>챌린지 수행 사진을 검증하고 저장 경로를 분리했습니다. MVP의 로컬 파일 시스템에서 프로덕션의 S3 호환 저장소로 확장 가능한 인터페이스를 유지했습니다.</p>
+          </article>
+          <article>
+            <span class="case-role-number">03</span>
+            <h4>토큰 보상 연결</h4>
+            <p>사진 인증 시 +20, 커뮤니티 좋아요 3개마다 +20을 추가 지급하되 하루 최대 60으로 제한하는 회복 정책을 도메인 흐름에 연결했습니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <nav class="case-links" aria-label="GreenBrain 프로젝트 관련 링크">
+        <a class="case-link case-link-primary" href="https://greenbrain-inha.github.io/DesignPrototype_GreenBrain/" target="_blank" rel="noopener noreferrer">프로토타입</a>
+        <a class="case-link" href="https://github.com/GreenBrain-Inha/BE_GreenBrain" target="_blank" rel="noopener noreferrer">Backend</a>
+        <a class="case-link" href="https://github.com/GreenBrain-Inha/FE_GreenBrain" target="_blank" rel="noopener noreferrer">Frontend</a>
+        <a class="case-link" href="https://github.com/GreenBrain-Inha" target="_blank" rel="noopener noreferrer">공식 GitHub</a>
+      </nav>
+    </div>
+  </div>
+</dialog>
+
+<dialog class="project-dialog" id="realgainDialog" aria-labelledby="realgainDialogTitle">
+  <div class="project-dialog-shell">
+    <header class="project-dialog-header">
+      <div class="project-dialog-heading">
+        <span class="project-dialog-mark" aria-hidden="true">🏭</span>
+        <div>
+          <p class="project-dialog-eyebrow">PROJECT CASE STUDY</p>
+          <h2 id="realgainDialogTitle">RealGain</h2>
+        </div>
+      </div>
+      <button class="project-dialog-close" type="button" data-dialog-close aria-label="RealGain 상세 닫기">×</button>
+    </header>
+
+    <div class="project-dialog-body">
+      <section class="case-hero" aria-labelledby="realgainCaseHeadline">
+        <div class="case-hero-copy">
+          <div class="case-meta-row">
+            <span>2025.09–2025.12</span>
+            <span>기업 연계 프로젝트</span>
+            <span>AI · 추론 모듈</span>
+          </div>
+          <p class="case-kicker">산업 설비 진동 데이터 기반 이상탐지</p>
+          <h3 id="realgainCaseHeadline">센서의 시계열 신호를 사람이 해석 가능한 Orbit 이미지와 이상 확률로 바꿨습니다.</h3>
+          <p class="case-lead">24채널 BIN 데이터를 RCP 채널쌍별 Orbit 이미지로 변환하고 ResNet18로 정상·비정상을 분류했습니다. Grad-CAM과 JSON 출력을 더해 판단 근거와 백엔드 연동까지 고려했습니다.</p>
+        </div>
+        <img class="case-hero-visual" src="assets/projects/realgain/orbit-1a.webp" alt="RealGain 진동 데이터에서 생성한 Orbit 1A 이미지" loading="lazy" decoding="async">
+      </section>
+
+      <div class="case-metrics" aria-label="RealGain 주요 처리 기준">
+        <div><strong>24채널</strong><span>원본 BIN 입력</span></div>
+        <div><strong>10초</strong><span>분석 구간</span></div>
+        <div><strong>4쌍</strong><span>RCP Orbit</span></div>
+        <div><strong>1/4</strong><span>이상 시 최종 이상</span></div>
+      </div>
+
+      <section class="case-section" aria-labelledby="realgainOrbitTitle">
+        <div class="case-section-heading">
+          <p class="case-section-index">01 · DATA TRANSFORMATION</p>
+          <h3 id="realgainOrbitTitle">진동 신호를 네 개의 Orbit으로 변환</h3>
+          <p>마지막 10초 구간에서 네 RCP 채널쌍을 각각 256×256 이미지로 만들고, 채널별 정상·이상 확률을 산출했습니다.</p>
+        </div>
+        <div class="case-plot-grid">
+          <figure><img src="assets/projects/realgain/orbit-1a.webp" alt="RealGain RCP Orbit 1A" loading="lazy" decoding="async"><figcaption>RCP 1A</figcaption></figure>
+          <figure><img src="assets/projects/realgain/orbit-1b.webp" alt="RealGain RCP Orbit 1B" loading="lazy" decoding="async"><figcaption>RCP 1B</figcaption></figure>
+          <figure><img src="assets/projects/realgain/orbit-2a.webp" alt="RealGain RCP Orbit 2A" loading="lazy" decoding="async"><figcaption>RCP 2A</figcaption></figure>
+          <figure><img src="assets/projects/realgain/orbit-2b.webp" alt="RealGain RCP Orbit 2B" loading="lazy" decoding="async"><figcaption>RCP 2B</figcaption></figure>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="realgainBuildTitle">
+        <div class="case-section-heading">
+          <p class="case-section-index">02 · IMPLEMENTATION</p>
+          <h3 id="realgainBuildTitle">모델 실험을 서비스에서 쓸 수 있는 모듈로 만들었습니다.</h3>
+        </div>
+        <div class="case-role-grid">
+          <article>
+            <span class="case-role-number">01</span>
+            <h4>BIN 전처리 파이프라인</h4>
+            <p>float32 little-endian 24채널 원본에서 마지막 10초를 추출하고, 고정 스케일의 네 Orbit 이미지를 일관된 입력으로 생성했습니다.</p>
+          </article>
+          <article>
+            <span class="case-role-number">02</span>
+            <h4>분류 · 설명 가능성</h4>
+            <p>ResNet18 기반 정상·이상 분류와 Grad-CAM 시각화를 연결해 결과 확률뿐 아니라 모델이 주목한 영역도 함께 확인하도록 했습니다.</p>
+          </article>
+          <article>
+            <span class="case-role-number">03</span>
+            <h4>백엔드 연동 인터페이스</h4>
+            <p><code>--json</code>과 <code>--show_cam</code> 옵션을 제공해 subprocess 또는 직접 import 방식으로 추론 결과를 소비할 수 있게 했습니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="realgainTrainingTitle">
+        <div class="case-section-heading">
+          <p class="case-section-index">03 · MODEL CHECK</p>
+          <h3 id="realgainTrainingTitle">학습 과정과 평가 결과를 함께 기록</h3>
+          <p>Accuracy · Loss 추이를 저장하고 Precision · Recall · F1을 함께 확인해 단일 정확도만으로 모델을 판단하지 않도록 평가 체계를 구성했습니다.</p>
+        </div>
+        <div class="case-training-grid">
+          <figure><img src="assets/projects/realgain/accuracy.webp" alt="RealGain Orbit CNN 학습 정확도 그래프" loading="lazy" decoding="async"><figcaption>Orbit CNN Accuracy</figcaption></figure>
+          <figure><img src="assets/projects/realgain/loss.webp" alt="RealGain Orbit CNN 학습 손실 그래프" loading="lazy" decoding="async"><figcaption>Orbit CNN Loss</figcaption></figure>
+        </div>
+        <p class="case-media-hint">그래프는 저장소에 보관된 실험 결과이며, 실제 운영 성능을 단독으로 의미하지 않습니다.</p>
+      </section>
+
+      <section class="case-section" aria-labelledby="realgainResultTitle">
+        <div class="case-section-heading">
+          <p class="case-section-index">04 · RECOGNITION</p>
+          <h3 id="realgainResultTitle">탄소중립 Innovation Academy 5기 대상</h3>
+        </div>
+        <div class="case-result-callout case-result-callout-award">
+          <strong>🏆 1위</strong>
+          <p>기업 연계 산업 데이터 문제를 전처리 · 모델 · 설명 가능성 · 연동 모듈까지 완성한 결과로 대상을 수상했습니다.</p>
+        </div>
+      </section>
+
+      <nav class="case-links" aria-label="RealGain 프로젝트 관련 링크">
+        <a class="case-link case-link-primary" href="https://github.com/RealGain-5/ML" target="_blank" rel="noopener noreferrer">ML</a>
+        <a class="case-link" href="https://github.com/RealGain-5/BE" target="_blank" rel="noopener noreferrer">Backend</a>
+        <a class="case-link" href="https://github.com/RealGain-5/FE" target="_blank" rel="noopener noreferrer">Frontend</a>
+        <a class="case-link" href="https://github.com/RealGain-5" target="_blank" rel="noopener noreferrer">공식 GitHub</a>
+      </nav>
+    </div>
+  </div>
+</dialog>
+
+<dialog class="project-dialog" id="issueoneDialog" aria-labelledby="issueoneDialogTitle">
+  <div class="project-dialog-shell">
+    <header class="project-dialog-header">
+      <div class="project-dialog-heading">
+        <span class="project-dialog-mark" aria-hidden="true">📰</span>
+        <div>
+          <p class="project-dialog-eyebrow">PROJECT CASE STUDY</p>
+          <h2 id="issueoneDialogTitle">IssueOne</h2>
+        </div>
+      </div>
+      <button class="project-dialog-close" type="button" data-dialog-close aria-label="IssueOne 상세 닫기">×</button>
+    </header>
+
+    <div class="project-dialog-body">
+      <section class="case-hero" aria-labelledby="issueoneCaseHeadline">
+        <div class="case-hero-copy">
+          <div class="case-meta-row">
+            <span>2025.03–2025.06</span>
+            <span>AI · Backend 담당</span>
+            <span>KSEB 미니프로젝트</span>
+          </div>
+          <p class="case-kicker">여러 언론사의 기사를 모아 비교하는 AI 뉴스 요약 서비스</p>
+          <h3 id="issueoneCaseHeadline">뉴스 수집부터 요약과 종합 결론까지, 메모리 제약 안에서 동작하는 파이프라인을 만들었습니다.</h3>
+          <p class="case-lead">RSS 기사 수집 · 정제 · 저장 · 요약 API를 FastAPI와 SQLite로 구현하고, 로컬 KoBART 추론이 배포 환경의 메모리를 초과하자 HuggingFace와 OpenAI API 방식으로 전환했습니다.</p>
+        </div>
+        <img class="case-hero-visual case-hero-visual-wide" src="assets/projects/issueone/open-graph.webp" alt="검은 배경의 ISSUE ONE 서비스 로고" loading="lazy" decoding="async">
+      </section>
+
+      <div class="case-metrics" aria-label="IssueOne 주요 지표">
+        <div><strong>1시간</strong><span>기사 수집 주기</span></div>
+        <div><strong>4개</strong><span>핵심 API</span></div>
+        <div><strong>2단계</strong><span>요약 · 결론 생성</span></div>
+        <div><strong>1위</strong><span>KSEB 미니프로젝트</span></div>
+      </div>
+
+      <section class="case-section" aria-labelledby="issueoneProductTitle">
+        <div class="case-section-heading">
+          <p class="case-section-index">01 · PRODUCT</p>
+          <h3 id="issueoneProductTitle">하나의 이슈를 여러 기사로 비교</h3>
+          <p>실시간 인기 키워드 또는 직접 검색한 이슈를 기준으로 여러 언론사의 기사를 모으고, 개별 요약과 종합 결론을 한 흐름에서 제공합니다.</p>
+        </div>
+        <div class="case-architecture-list">
+          <figure class="case-wide-media">
+            <a href="assets/projects/issueone/product.webp" target="_blank" rel="noopener noreferrer" aria-label="IssueOne 제품 소개 화면 크게 보기">
+              <img src="assets/projects/issueone/product.webp" alt="모바일과 데스크톱에서 동작하는 IssueOne 검색 화면" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>반응형 검색 경험</strong><span>키워드 탐색 · 언론사별 기사 비교 · AI 요약</span></figcaption>
+          </figure>
+          <figure class="case-wide-media">
+            <a href="assets/projects/issueone/flow.webp" target="_blank" rel="noopener noreferrer" aria-label="IssueOne 핵심 기능 소개 화면 크게 보기">
+              <img src="assets/projects/issueone/flow.webp" alt="기사 수집, 트렌딩 키워드, 이슈 검색, 종합 결론의 IssueOne 핵심 기능" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>핵심 기능</strong><span>수집 → 추천 키워드 → 검색 → 종합 결론</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="issueoneBuildTitle">
+        <div class="case-section-heading">
+          <p class="case-section-index">02 · IMPLEMENTATION</p>
+          <h3 id="issueoneBuildTitle">배포 제약을 확인하고 추론 방식을 바꿨습니다.</h3>
+        </div>
+        <div class="case-role-grid">
+          <article>
+            <span class="case-role-number">01</span>
+            <h4>수집 · 정제 · 저장</h4>
+            <p>RSS와 뉴스 페이지를 주기적으로 수집하고 HTML을 정제한 뒤 기사와 키워드를 SQLite에 저장해 검색과 요약이 같은 데이터 기준을 사용하도록 했습니다.</p>
+          </article>
+          <article>
+            <span class="case-role-number">02</span>
+            <h4>메모리 제약 대응</h4>
+            <p>KoBART 로컬 추론이 제한된 배포 환경의 메모리를 초과하자 모델 호출을 HuggingFace와 OpenAI API로 분리해 서비스 배포 가능성을 확보했습니다.</p>
+          </article>
+          <article>
+            <span class="case-role-number">03</span>
+            <h4>API · 클라우드 배포</h4>
+            <p><code>/run-news</code>, <code>/trending-keywords</code>, <code>/search-articles</code>, <code>/summarize-conclusion</code>을 구성하고 Render와 Vercel에 배포했습니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section case-award-section" aria-labelledby="issueoneAwardTitle">
+        <div class="case-award-copy">
+          <p class="case-section-index">03 · RECOGNITION</p>
+          <h3 id="issueoneAwardTitle">KSEB 미니프로젝트 대상</h3>
+          <p>짧은 프로젝트 기간에 수집 파이프라인과 AI 요약, 반응형 화면, 실제 배포까지 완성해 전체 1위를 수상했습니다.</p>
+          <ul>
+            <li>AI · Backend 파이프라인 구현</li>
+            <li>메모리 제약을 API 전환으로 해결</li>
+            <li>실제 서비스 URL까지 배포</li>
+          </ul>
+        </div>
+        <figure class="case-award-media">
+          <img src="assets/projects/issueone/award.webp" alt="KSEB 미니프로젝트 대상 상장과 발표 현장" loading="lazy" decoding="async">
+          <figcaption>2025 K-Software Empowerment Bootcamp I-MINI Project 대상</figcaption>
+        </figure>
+      </section>
+
+      <nav class="case-links" aria-label="IssueOne 프로젝트 관련 링크">
+        <a class="case-link case-link-primary" href="https://issue-one.vercel.app/" target="_blank" rel="noopener noreferrer">서비스 열기</a>
+        <a class="case-link" href="https://github.com/KSEB-4-E/AI" target="_blank" rel="noopener noreferrer">AI · Backend</a>
+        <a class="case-link" href="https://github.com/KSEB-4-E/FE" target="_blank" rel="noopener noreferrer">Frontend</a>
+        <a class="case-link" href="https://github.com/KSEB-4-E" target="_blank" rel="noopener noreferrer">공식 GitHub</a>
+      </nav>
+    </div>
+  </div>
+</dialog>
+
 <footer class="footer">
   <div class="container footer-inner">
     <span>© <span id="year">2026</span> 김찬혁 (Chanhyeok Kim). All rights reserved.</span>
@@ -853,6 +1377,6 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=20260824-3"></script>
+<script src="js/main.js?v=20260824-4"></script>
 </body>
 </html>
