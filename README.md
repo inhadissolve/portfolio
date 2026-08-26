@@ -66,6 +66,7 @@ Tools           Git · GitHub · GitHub Actions · Vercel · Railway
 └─ assets/
    ├─ homefit/             # HomeFit 화면, 아키텍처, 데모데이·수상 이미지
    ├─ projects/            # 프로젝트별 화면과 결과 이미지
+   ├─ awards/              # 개인 수상·교육 수료 증빙 이미지
    ├─ tech/                # 로컬 기술 아이콘
    ├─ resume.pdf           # 최신 이력서
    └─ og-image.png         # 링크 공유 미리보기

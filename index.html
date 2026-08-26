@@ -24,7 +24,7 @@
 
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard.css">
-<link rel="stylesheet" href="css/style.css?v=20260824-5">
+<link rel="stylesheet" href="css/style.css?v=20260827-1">
 
 <script type="application/ld+json">
 {
@@ -616,6 +616,34 @@
         </li>
       </ul>
 
+      <div class="award-evidence reveal" aria-labelledby="awardEvidenceTitle">
+        <div class="award-evidence-heading">
+          <p class="case-section-index">CERTIFICATES</p>
+          <h3 id="awardEvidenceTitle">교육 수료 · 개인 성과</h3>
+          <p>사진이나 상장을 누르면 원본 크기로 확인할 수 있습니다.</p>
+        </div>
+        <div class="award-evidence-grid">
+          <figure class="award-evidence-card award-evidence-card-photo">
+            <a href="assets/awards/kseb-excellent-trainee.webp" target="_blank" rel="noopener noreferrer" aria-label="KSEB 개인 우수 교육생 시상 사진 원본 보기">
+              <img src="assets/awards/kseb-excellent-trainee.webp" alt="KSEB 부트캠프 개인 우수 교육생으로 선정되어 수상하는 김찬혁" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>KSEB 개인 우수 교육생 시상</strong><span>전체 수료생 중 8명 선정</span></figcaption>
+          </figure>
+          <figure class="award-evidence-card">
+            <a href="assets/awards/kseb-excellent-trainee-certificate.webp" target="_blank" rel="noopener noreferrer" aria-label="KSEB 개인 우수상 상장 원본 보기">
+              <img src="assets/awards/kseb-excellent-trainee-certificate.webp" alt="KSEB 부트캠프 개인 우수상 상장" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>KSEB 개인 우수상</strong><span>교육 참여와 프로젝트 성과 인정</span></figcaption>
+          </figure>
+          <figure class="award-evidence-card">
+            <a href="assets/awards/kseb-completion-certificate.webp" target="_blank" rel="noopener noreferrer" aria-label="KSEB 부트캠프 수료증 원본 보기">
+              <img src="assets/awards/kseb-completion-certificate.webp" alt="K-Software Empowerment Bootcamp 수료증" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>KSEB 부트캠프 수료</strong><span>K-Software Empowerment Bootcamp 4기</span></figcaption>
+          </figure>
+        </div>
+      </div>
+
       <div class="education-note reveal">
         <span class="info-icon" aria-hidden="true">🎓</span>
         <span><strong>인하대학교</strong> 전기전자공학부 재학</span>
@@ -1029,10 +1057,26 @@
             <li>AI 추론 서버 MIT 라이선스 공개</li>
           </ul>
         </div>
-        <figure class="case-award-media case-award-media-portrait">
-          <img src="assets/projects/sudam/award.webp" alt="K-SoftVation Showcase에서 우수상을 수상한 수담 팀 단체사진" loading="lazy" decoding="async">
-          <figcaption>K-Software Empowerment Bootcamp 팀 프로젝트 우수상</figcaption>
-        </figure>
+        <div class="case-award-gallery" aria-label="수담 수상 증빙">
+          <figure class="case-award-media case-award-media-featured case-award-media-portrait">
+            <a href="assets/projects/sudam/award.webp" target="_blank" rel="noopener noreferrer" aria-label="수담 팀 프로젝트 우수상 사진 원본 보기">
+              <img src="assets/projects/sudam/award.webp" alt="K-SoftVation Showcase에서 우수상을 수상한 수담 팀 단체사진" loading="lazy" decoding="async">
+            </a>
+            <figcaption>KSEB 팀 프로젝트 우수상</figcaption>
+          </figure>
+          <figure class="case-award-media">
+            <a href="assets/projects/sudam/opensource-award.webp" target="_blank" rel="noopener noreferrer" aria-label="오픈소스 SW 페스티벌 최우수상 수상 사진 원본 보기">
+              <img src="assets/projects/sudam/opensource-award.webp" alt="인하대학교 오픈소스 SW 페스티벌 최우수상을 수상한 김찬혁" loading="lazy" decoding="async">
+            </a>
+            <figcaption>오픈소스 SW 페스티벌 최우수상 · 총장상</figcaption>
+          </figure>
+          <figure class="case-award-media case-award-media-document">
+            <a href="assets/projects/sudam/kseb-award-certificate.webp" target="_blank" rel="noopener noreferrer" aria-label="KSEB 팀 프로젝트 우수상 상장 원본 보기">
+              <img src="assets/projects/sudam/kseb-award-certificate.webp" alt="KSEB 팀 프로젝트 우수상 상장" loading="lazy" decoding="async">
+            </a>
+            <figcaption>KSEB 팀 프로젝트 우수상 상장</figcaption>
+          </figure>
+        </div>
       </section>
 
       <nav class="case-links" aria-label="수담 프로젝트 관련 링크">
@@ -1239,15 +1283,23 @@
         <p class="case-media-hint">그래프는 저장소에 보관된 실험 결과이며, 실제 운영 성능을 단독으로 의미하지 않습니다.</p>
       </section>
 
-      <section class="case-section" aria-labelledby="realgainResultTitle">
-        <div class="case-section-heading">
+      <section class="case-section case-award-section" aria-labelledby="realgainResultTitle">
+        <div class="case-award-copy">
           <p class="case-section-index">04 · RECOGNITION</p>
           <h3 id="realgainResultTitle">탄소중립 Innovation Academy 5기 대상</h3>
-        </div>
-        <div class="case-result-callout case-result-callout-award">
-          <strong>🏆 1위</strong>
           <p>기업 연계 산업 데이터 문제를 전처리 · 모델 · 설명 가능성 · 연동 모듈까지 완성한 결과로 대상을 수상했습니다.</p>
+          <ul>
+            <li>기업 연계 프로젝트 전체 1위</li>
+            <li>산업 설비 이상 탐지 파이프라인 구현</li>
+            <li>Grad-CAM 기반 판단 근거 시각화</li>
+          </ul>
         </div>
+        <figure class="case-award-media">
+          <a href="assets/projects/realgain/award.webp" target="_blank" rel="noopener noreferrer" aria-label="탄소중립 Innovation Academy 대상 수상 사진 원본 보기">
+            <img src="assets/projects/realgain/award.webp" alt="탄소중립 Innovation Academy 기업연계 프로젝트 대상을 수상한 RealGain 팀" loading="lazy" decoding="async">
+          </a>
+          <figcaption>탄소중립 Innovation Academy 5기 기업연계 프로젝트 대상</figcaption>
+        </figure>
       </section>
 
       <nav class="case-links" aria-label="RealGain 프로젝트 관련 링크">
@@ -1352,10 +1404,26 @@
             <li>실제 서비스 URL까지 배포</li>
           </ul>
         </div>
-        <figure class="case-award-media">
-          <img src="assets/projects/issueone/award.webp" alt="KSEB 미니프로젝트 대상 상장과 발표 현장" loading="lazy" decoding="async">
-          <figcaption>2025 K-Software Empowerment Bootcamp I-MINI Project 대상</figcaption>
-        </figure>
+        <div class="case-award-gallery" aria-label="IssueOne 수상 증빙">
+          <figure class="case-award-media case-award-media-featured">
+            <a href="assets/projects/issueone/team-award.webp" target="_blank" rel="noopener noreferrer" aria-label="IssueOne 팀 대상 수상 사진 원본 보기">
+              <img src="assets/projects/issueone/team-award.webp" alt="KSEB I-MINI Project 대상을 수상한 IssueOne 팀" loading="lazy" decoding="async">
+            </a>
+            <figcaption>KSEB I-MINI Project 대상 수상 현장</figcaption>
+          </figure>
+          <figure class="case-award-media">
+            <a href="assets/projects/issueone/award.webp" target="_blank" rel="noopener noreferrer" aria-label="IssueOne 대상 상패 원본 보기">
+              <img src="assets/projects/issueone/award.webp" alt="KSEB 미니프로젝트 대상 상패와 발표 현장" loading="lazy" decoding="async">
+            </a>
+            <figcaption>I-MINI Project 대상 상패</figcaption>
+          </figure>
+          <figure class="case-award-media case-award-media-document">
+            <a href="assets/projects/issueone/award-certificate.webp" target="_blank" rel="noopener noreferrer" aria-label="IssueOne 대상 상장 원본 보기">
+              <img src="assets/projects/issueone/award-certificate.webp" alt="KSEB I-MINI Project 대상 상장" loading="lazy" decoding="async">
+            </a>
+            <figcaption>I-MINI Project 대상 상장</figcaption>
+          </figure>
+        </div>
       </section>
 
       <nav class="case-links" aria-label="IssueOne 프로젝트 관련 링크">
@@ -1377,6 +1445,6 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=20260824-5"></script>
+<script src="js/main.js?v=20260827-1"></script>
 </body>
 </html>
