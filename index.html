@@ -318,7 +318,7 @@
             <p class="timeline-period">2025.07 ~ 2025.09</p>
             <h3 class="timeline-title">🥉 KSEB 팀 프로젝트 · 수담(手談)</h3>
             <ul class="timeline-list">
-              <li>MediaPipe keypoint 추출 → 딥러닝 분류 → FastAPI 추론 서버로 이어지는 AI 파이프라인을 팀장으로서 설계, 6개 파트 일정 조율</li>
+              <li>MediaPipe keypoint 추출 → 딥러닝 분류 → FastAPI 추론 서버로 이어지는 AI 파이프라인을 7인 팀 팀장으로서 설계, AI · FE · BE · Unity 파트 일정 조율</li>
               <li>none 라벨 수집, confidence threshold, sliding window 적용으로 실시간 예측을 안정화해 <strong>우수상(3위)</strong> 수상</li>
             </ul>
           </div>
@@ -391,7 +391,7 @@
         <article class="project-card">
           <div class="card-head">
             <div>
-              <p class="card-period">2026.06 ~ 2026.08 · UMC 10th 팀 프로젝트 · Backend Team Lead</p>
+              <p class="card-period">2026.06 ~ 2026.08 · UMC 10th · 10인 팀 프로젝트 · Backend Team Lead</p>
               <h3 class="card-title"><img class="card-title-icon" src="assets/icon-homefit.png" alt="">HomeFit | 청년 주거 · 금융 의사결정 서비스</h3>
             </div>
           </div>
@@ -433,8 +433,9 @@
             <span class="badge badge-award">🏆 오픈소스 SW 페스티벌 최우수상 (인하대 총장상)</span>
           </div>
           <ul class="card-desc">
-            <li>MediaPipe keypoint 추출 → 딥러닝 분류 → FastAPI 추론 서버로 이어지는 AI 파이프라인을 설계하고 팀장으로서 6개 파트 일정을 조율</li>
-            <li>none 라벨 수집, confidence threshold, sliding window 적용으로 실시간 예측 안정화</li>
+            <li>JPEG 프레임을 MediaPipe로 처리해 <strong>10프레임 × 194차원 텐서</strong>로 변환하고, 라벨 · 신뢰도 · 상위 후보를 반환하는 FastAPI · Docker 추론 API 구현</li>
+              <li>학습에 없던 <strong>샘플별 정규화를 실시간 예측 스크립트에서 제거</strong>해 학습 · 추론 입력 스케일을 일치시켜 전처리 불일치 해결</li>
+            <li>타이핑 · 휴대전화 사용을 none으로 묶는 학습 로직과 <strong>신뢰도 임계값 · 3회 연속 일치 · 중복 누적 방지</strong>로 비수어 동작 오탐과 중복 출력 제어</li>
           </ul>
           <div class="card-tech">
             <span class="tech-tag">Python 3.10</span><span class="tech-tag">MediaPipe 0.10</span><span class="tech-tag">TensorFlow 2.13</span><span class="tech-tag">FastAPI 0.110</span><span class="tech-tag">Docker</span>
@@ -717,7 +718,7 @@
         <div class="case-hero-copy">
           <div class="case-meta-row">
             <span>2026.06–2026.08</span>
-            <span>Backend Team Lead</span>
+            <span>10인 팀 · Backend Team Lead</span>
             <span>2026.08.22 운영 종료</span>
           </div>
           <p class="case-kicker">청년 주거 · 금융 의사결정 서비스</p>
@@ -1025,7 +1026,7 @@
           <div class="case-meta-row">
             <span>2025.07–2025.09</span>
             <span>팀장 · AI/FastAPI</span>
-            <span>6개 파트 일정 조율</span>
+            <span>7인 팀 · 파트 일정 조율</span>
           </div>
           <p class="case-kicker">실시간 양방향 수어 인식 · 번역 서비스</p>
           <h3 id="sudamCaseHeadline">카메라 프레임에서 수어 특징을 추출해 안정적인 실시간 번역 결과까지 연결했습니다.</h3>
@@ -1076,6 +1077,11 @@
             <span class="case-role-number">03</span>
             <h4>세션 · 배포 관리</h4>
             <p><code>/health</code>에 window 크기와 feature 차원, 활성 세션을 노출하고 오래된 세션 정리 API와 Docker Compose 패키징을 구성했습니다.</p>
+          </article>
+          <article>
+            <span class="case-role-number">04</span>
+            <h4>전처리 불일치 수정</h4>
+            <p>실시간 예측 결과가 학습 성능과 어긋나는 원인을 추적한 결과, <strong>학습에 없던 샘플별 정규화</strong>가 실시간 예측 스크립트에만 들어가 있었습니다. 해당 정규화를 제거해 학습과 추론의 입력 스케일을 일치시켰습니다.</p>
           </article>
         </div>
       </section>
