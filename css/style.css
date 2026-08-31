@@ -356,6 +356,7 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
   align-items: start;
 }
 .skill-card {
+  min-width: 0;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
@@ -372,6 +373,7 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
 .chip-list { display: flex; flex-wrap: wrap; gap: .55rem; }
 .chip {
   display: inline-flex;
+  max-width: 100%;
   align-items: center;
   gap: .4rem;
   padding: .4rem .75rem;
@@ -381,7 +383,8 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
   font-weight: 600;
   color: var(--text);
 }
-.chip-icon { width: 15px; height: 15px; object-fit: contain; }
+.chip > span { min-width: 0; overflow-wrap: anywhere; }
+.chip-icon { width: 15px; height: 15px; flex-shrink: 0; object-fit: contain; }
 .chip-icon-wide { width: 22px; }
 .chip-icon-symbol {
   display: inline-grid;
@@ -884,6 +887,7 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
   background: var(--surface);
   color: var(--accent);
   font-size: .78rem;
+  overflow-wrap: anywhere;
 }
 
 .case-flow-list {
@@ -892,6 +896,7 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
   gap: .75rem;
 }
 .case-flow-list-six { grid-template-columns: repeat(6, 1fr); }
+.case-flow-list-four { grid-template-columns: repeat(4, 1fr); }
 .case-flow-list article {
   position: relative;
   min-height: 150px;
@@ -1241,6 +1246,7 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
   .case-role-grid { grid-template-columns: 1fr; }
   .case-role-grid article { min-height: 0; }
   .case-flow-list,
+  .case-flow-list-four,
   .case-flow-list-six { grid-template-columns: repeat(3, 1fr); }
   .case-flow-list article::after { display: none !important; }
   .case-plot-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1271,6 +1277,7 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
 
 @media (max-width: 560px) {
   .skills-grid { grid-template-columns: 1fr 1fr; }
+  .skill-card { padding: 1rem; }
   .other-projects-grid { grid-template-columns: 1fr; }
   .hero-cta { flex-direction: column; width: 100%; }
   .hero-cta .btn { width: 100%; justify-content: center; }
@@ -1299,6 +1306,7 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
   .case-screen-card figcaption span { font-size: .68rem; }
   .case-product-grid { grid-template-columns: 1fr; }
   .case-flow-list,
+  .case-flow-list-four,
   .case-flow-list-six { grid-template-columns: 1fr; }
   .case-flow-list article { min-height: 0; }
   .case-flow-list strong { margin-top: .75rem; }
