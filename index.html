@@ -427,6 +427,34 @@
         <article class="project-card">
           <div class="card-head">
             <div>
+              <p class="card-period">2026.09 ~ 진행 중 · 개인 프로젝트 · 이지컷 벤치마킹 · Claude Code 활용</p>
+              <h3 class="card-title"><img class="card-title-icon" src="assets/icon-cutmate.svg" alt="">컷메이트 (Cutmate) — AI 쇼츠 · 영상 편집 스튜디오</h3>
+            </div>
+          </div>
+          <ul class="card-desc">
+            <li>받아쓰기가 단어 시작을 약 0.5초 늦게 적는 경우가 있어 단어 앞머리가 잘리던 문제를, <strong>0.05초 단위 음량 측정</strong>을 함께 보도록 바꿔 해결</li>
+            <li>모든 OpenAI 호출을 작업 · 사용자별로 기록하는 <strong>AI 비용 계기판</strong>으로, 94분 영상 자동 편집 1회 약 799원 중 98%가 받아쓰기임을 확인</li>
+            <li>SQLite 작업 대기열과 재시작 복구, 재시도 때 저장된 받아쓰기 재사용으로 중복 과금을 막고, <strong>사람이 승인한 영상만</strong> YouTube에 업로드</li>
+          </ul>
+          <div class="usage-stats">
+            <div class="usage-stat"><span class="usage-num">66<em>개</em></span><span class="usage-label">자동화 테스트</span></div>
+            <div class="usage-stat"><span class="usage-num">16<em>분</em></span><span class="usage-label">94분 영상 편집본</span></div>
+            <div class="usage-stat"><span class="usage-num">18<em>분</em></span><span class="usage-label">자동 편집 처리</span></div>
+            <div class="usage-stat"><span class="usage-num">799<em>원</em></span><span class="usage-label">1회 AI 비용</span></div>
+          </div>
+          <p class="usage-caption">앱 기록 기준 · 자동 편집 첫 실행 2026.09.27 · 시간 · 비용은 근삿값</p>
+          <div class="card-tech">
+            <span class="tech-tag">FastAPI 0.141</span><span class="tech-tag">SQLite</span><span class="tech-tag">React 19.2</span><span class="tech-tag">TypeScript 7.0</span><span class="tech-tag">Vite 6.4</span><span class="tech-tag">ffmpeg 9.0</span><span class="tech-tag">yt-dlp</span><span class="tech-tag">OpenAI SDK 2.54</span>
+          </div>
+          <button class="card-more card-more-dialog" type="button" data-project-dialog="cutmateDialog" aria-haspopup="dialog" aria-controls="cutmateDialog">
+            <span class="card-more-label">자세히 보기</span>
+            <svg class="card-more-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+          </button>
+        </article>
+
+        <article class="project-card">
+          <div class="card-head">
+            <div>
               <p class="card-period">2025.07 ~ 2025.09 · 7인 팀 프로젝트 · 팀장</p>
               <h3 class="card-title"><img class="card-title-icon" src="assets/icon-sudam.png" alt="">수담(手談) | 실시간 양방향 수어 인식 · 번역 서비스</h3>
             </div>
@@ -1032,6 +1060,107 @@
         <a class="case-link" href="https://samuel-school-api.vercel.app/docs" target="_blank" rel="noopener noreferrer">API 문서</a>
         <a class="case-link" href="https://github.com/inhadissolve/samuel-school" target="_blank" rel="noopener noreferrer">GitHub (private)</a>
       </nav>
+    </div>
+  </div>
+</dialog>
+
+<dialog class="project-dialog" id="cutmateDialog" aria-labelledby="cutmateDialogTitle">
+  <div class="project-dialog-shell">
+    <header class="project-dialog-header">
+      <div class="project-dialog-heading">
+        <img class="project-dialog-logo" src="assets/icon-cutmate.svg" alt="컷메이트 아이콘" loading="lazy" decoding="async">
+        <div>
+          <p class="project-dialog-eyebrow">PROJECT CASE STUDY</p>
+          <h2 id="cutmateDialogTitle">컷메이트 (Cutmate)</h2>
+        </div>
+      </div>
+      <button class="project-dialog-close" type="button" data-dialog-close aria-label="컷메이트 상세 닫기">×</button>
+    </header>
+
+    <div class="project-dialog-body">
+      <section class="case-hero" aria-labelledby="cutmateCaseHeadline">
+        <div class="case-hero-copy">
+          <div class="case-meta-row">
+            <span>2026.09–진행 중</span>
+            <span>1인 기획 · 개발</span>
+            <span>이지컷 벤치마킹 · Claude Code 활용</span>
+          </div>
+          <p class="case-kicker">AI 쇼츠 · 영상 편집 스튜디오</p>
+          <h3 id="cutmateCaseHeadline">긴 영상을 AI가 편집안으로 만들고, 사람이 확인한 결과만 내보냅니다.</h3>
+          <p class="case-lead">FastAPI · SQLite 서버와 React · TypeScript 화면이 내 PC에서 함께 동작하는 로컬 도구입니다. 받아쓰기와 분석 모델로 하이라이트 쇼츠, 가사 자막 영상, 내레이션 쇼츠, 긴 영상 편집본을 만들고, 작업 상태와 AI 비용을 기록해 관리합니다.</p>
+        </div>
+        <img class="case-mascot case-project-icon" src="assets/icon-cutmate.svg" alt="가위 모양의 컷메이트 아이콘" loading="lazy" decoding="async">
+      </section>
+
+      <div class="case-metrics" aria-label="컷메이트 주요 지표">
+        <div><strong>66개</strong><span>자동화 테스트</span></div>
+        <div><strong>94→16분</strong><span>채널 자동 편집</span></div>
+        <div><strong>약 799원</strong><span>1회 AI 비용</span></div>
+        <div><strong>98%</strong><span>비용 중 받아쓰기</span></div>
+      </div>
+
+      <section class="case-section" aria-labelledby="cutmateFlowTitle">
+        <div class="case-section-heading">
+          <p class="case-section-index">01 · EDIT FLOW</p>
+          <h3 id="cutmateFlowTitle">긴 영상이 편집본이 되기까지</h3>
+          <p>새 영상 자동 편집을 켜면 채널을 1시간마다 확인해 한 번에 한 편씩 처리합니다. 결과는 확인 대기로 남기고, YouTube 업로드는 사람이 직접 누릅니다.</p>
+        </div>
+        <div class="case-flow-list" aria-label="컷메이트 편집 처리 순서">
+          <article><span>01</span><strong>가져오기</strong><p>YouTube · 파일 수집, 이미 가져온 영상은 제외</p></article>
+          <article><span>02</span><strong>받아쓰기</strong><p>whisper-1 · 10분 단위, 단어 시각을 원본 시간으로 복원</p></article>
+          <article><span>03</span><strong>편집안</strong><p>20~45초 문단마다 살림 · 자름과 이유, 장 구성</p></article>
+          <article><span>04</span><strong>침묵 정리</strong><p>받아쓰기와 음량이 모두 조용한 0.8초 이상만 절단</p></article>
+          <article><span>05</span><strong>렌더 · 확인</strong><p>프레임 단위로 잘라 MP4 한 편, 썸네일 추천</p></article>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="cutmateBuildTitle">
+        <div class="case-section-heading">
+          <p class="case-section-index">02 · IMPLEMENTATION</p>
+          <h3 id="cutmateBuildTitle">편집 품질, 비용, 긴 작업의 안정성을 함께 다뤘습니다.</h3>
+        </div>
+        <div class="case-role-grid">
+          <article>
+            <span class="case-role-number">01</span>
+            <h4>침묵 컷 기준 재설계</h4>
+            <p>편집본을 보며 남긴 "말이 끊겨요" 메모에서, 받아쓰기가 단어 시작을 약 0.5초 늦게 적는 경우가 있어 앞머리가 잘린다는 원인을 확인했습니다. 원본 음량을 0.05초마다 재서(영상당 1회, 72분에 약 25초, API 비용 없음) 방 소음과 말소리 사이에 기준선을 두고, 둘 다 조용한 0.8초 이상 구간만 앞뒤 0.15초를 남기고 자릅니다.</p>
+          </article>
+          <article>
+            <span class="case-role-number">02</span>
+            <h4>AI 비용 계측</h4>
+            <p>받아쓰기 · 분석 · 대본 · 편집안 등 모든 OpenAI 호출을 작업 · 사용자별로 <code>ai_usage</code>에 기록하고 화면에 비용을 표시했습니다. 94분 영상 자동 편집 1회 약 799원 중 98%가 받아쓰기임을 확인해, 로컬 전사 전환을 다음 과제로 검토하고 있습니다.</p>
+          </article>
+          <article>
+            <span class="case-role-number">03</span>
+            <h4>긴 작업 안정성 · 안전장치</h4>
+            <p>작업은 SQLite 대기열에서 한 건씩 처리하고, 앱을 다시 켜면 대기 작업을 이어갑니다. 재시도 때는 저장된 받아쓰기를 재사용해 같은 요청에 다시 비용이 들지 않게 했고, 편집 버전이 다르면 <code>409</code>로 거절합니다. 자동화로 만든 쇼츠는 사람이 승인한 것만 올라갑니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="cutmateQualityTitle">
+        <div class="case-section-heading">
+          <p class="case-section-index">03 · QUALITY</p>
+          <h3 id="cutmateQualityTitle">검증한 것과 아직 남은 것을 나눠 기록했습니다.</h3>
+        </div>
+        <div class="case-role-grid">
+          <article>
+            <span class="case-role-number">01</span>
+            <h4>자동화 테스트 66개</h4>
+            <p>입력 경계 · 손상 파일 · 취소와 재시도 · 별도 프로세스 재시작 복원 · 모의 OpenAI 응답과 오류 · 5가지 화면 비율 합성 · 한글 어절 줄바꿈 등을 pytest로 검증합니다.</p>
+          </article>
+          <article>
+            <span class="case-role-number">02</span>
+            <h4>계정 분리 · 원격 접속</h4>
+            <p>본인 포함 2명이 각자 계정으로 사용하며, 다른 기기는 Tailscale 비공개 주소로 접속합니다. 사용자별로 프로젝트 · 설정이 분리되고, 관리자 전용 기능은 서버에서도 막힙니다.</p>
+          </article>
+          <article>
+            <span class="case-role-number">03</span>
+            <h4>남은 검증</h4>
+            <p>장면 선택의 편집 품질, 어절 단위 음성 동기화의 정량 평가, 4시간 · 12GiB 한도의 부하 시험은 아직 별도 확인이 필요합니다.</p>
+          </article>
+        </div>
+      </section>
     </div>
   </div>
 </dialog>
