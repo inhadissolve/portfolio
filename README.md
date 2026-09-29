@@ -52,6 +52,7 @@
 | **메모라이즈 (Memorize)** | 1인 기획 · 개발 · 운영 | 암기 학습 웹서비스. 서버리스 커넥션 상한·폴링 부하·컴퓨트 예산 검토, API·DB 리전 정렬, AI 비용 가드레일 | [서비스](https://samuel-school.vercel.app) · [API 문서](https://samuel-school-api.vercel.app/docs) |
 | **HomeFit** | 총 10인 팀 · Backend Team Lead | 청년 주거·금융 API, Stable Hash·Prisma Upsert 기반 멱등 Seed, Android 통합 테스트, AWS IaC·CI/CD·DB 이관 | [Showcase](https://github.com/inhadissolve/homefit-showcase) · [공식 GitHub](https://github.com/umc-homefit) |
 | **컷메이트 (Cutmate)** | 1인 기획·개발 · 진행 중 (Claude Code 활용) | AI 쇼츠·영상 편집 로컬 도구(이지컷 벤치마킹). 받아쓰기+음량 기준 침묵 컷, OpenAI 호출별 비용 계기판(94분 영상 1회 약 799원, 98% 받아쓰기), SQLite 작업 대기열·재시작 복구, 사람 승인 업로드 | 로컬 도구 · 저장소 비공개 |
+| **수담 웹 (SuDam)** | 1인 개인 프로젝트 · 진행 중 (Codex 하네스 엔지니어링) | 한국수어 초보 학습 웹. 공공데이터 수어 11,157건 적재, 설명란 영상 URL 7,054건의 원인 수정·백업 후 정정, AES-256-GCM 토큰 서버 채점, Vitest 408개 | 출시 전 · 저장소 비공개 |
 | **수담(手談)** | 7인 팀 팀장 · AI 파이프라인 | 10프레임 × 194차원 추론 API, 예측 스크립트 전처리 불일치 수정, 비수어 오탐·중복 출력 제어 | [공식 GitHub](https://github.com/KSEB-MEGA-CREW) |
 | **RealGain** | AI/HW · 연동 모듈 | 24채널 진동 BIN → Orbit 이미지 → PyTorch·torchvision ResNet18 분류. Grad-CAM·JSON 추론 모듈 | [공식 GitHub](https://github.com/RealGain-5) |
 
@@ -79,7 +80,7 @@ Language        Python 3.10+ · TypeScript 5.9 · JavaScript
 Backend         FastAPI 0.140 / 0.110(수담) · NestJS 11 · Node.js 22
 Database        PostgreSQL 18 · SQLAlchemy 2.0 · Prisma 6 · Alembic · SQLite
 Cloud/Infra     AWS(ALB·EC2·RDS·ECR·S3) · Terraform 1.8 · Docker · CloudWatch
-Test            pytest 8.3 · Jest 29 · Supertest · Testcontainers 12
+Test            pytest 8.3 · Jest 29 · Vitest 4.1 · Supertest · Testcontainers 12
 AI/Data         OpenAI SDK 2.53 · PyTorch 2.8 · torchvision 0.23 · TensorFlow 2.13 · MediaPipe 0.10 · Pandas 2.2
 Frontend        React 19.2 · Next.js 16.2 · Vite 7.2 · Tailwind CSS
 Tools           Git · GitHub Actions OIDC · Vercel · Railway
@@ -89,7 +90,7 @@ Tools           Git · GitHub Actions OIDC · Vercel · Railway
 
 ```text
 .
-├─ index.html              # 소개, 기술, 경험, 프로젝트와 7개 상세 다이얼로그
+├─ index.html              # 소개, 기술, 경험, 프로젝트와 8개 상세 다이얼로그
 ├─ css/style.css           # 반응형 UI, 라이트/다크 테마, 모달 애니메이션
 ├─ js/main.js              # 내비게이션, 테마, 스크롤 효과, 프로젝트 다이얼로그
 └─ assets/

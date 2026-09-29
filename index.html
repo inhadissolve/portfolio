@@ -340,6 +340,34 @@
         <article class="project-card">
           <div class="card-head">
             <div>
+              <p class="card-period">2026.05 ~ 진행 중(출시 전) · 개인 프로젝트 · Codex 하네스 엔지니어링</p>
+              <h3 class="card-title"><img class="card-title-icon" src="assets/icon-sudam-web.svg" alt="">수담 웹 (SuDam) — 한국수어 초보 학습 서비스</h3>
+            </div>
+          </div>
+          <ul class="card-desc">
+            <li>공공데이터 수어 <strong>11,157건</strong>(일상 3,493 · 전문 7,664)을 dry-run 기본 · 페이지 단위 트랜잭션 · 적재 후 검증 스크립트로 PostgreSQL에 적재</li>
+            <li>전수 감사로 설명란에 영상 URL이 저장된 <strong>7,054건(63%)</strong>과 수집 코드의 원인을 찾아 고치고, 대상 행 백업 · 재확인 후 트랜잭션으로 정정 (재실행 시 추가 변경 0건)</li>
+            <li>퀴즈 정답은 <strong>AES-256-GCM 암호화 토큰</strong>으로만 전달해 서버에서 채점하고, 로그인 없는 익명 학습 기록으로 저장 · 틀린 단어 복습 제공</li>
+          </ul>
+          <div class="usage-stats">
+            <div class="usage-stat"><span class="usage-num">11,157<em>건</em></span><span class="usage-label">수집 수어 데이터</span></div>
+            <div class="usage-stat"><span class="usage-num">7,054<em>건</em></span><span class="usage-label">설명 오류 정정</span></div>
+            <div class="usage-stat"><span class="usage-num">408<em>개</em></span><span class="usage-label">자동화 테스트</span></div>
+            <div class="usage-stat"><span class="usage-num">19<em>단계</em></span><span class="usage-label">phase별 개발</span></div>
+          </div>
+          <p class="usage-caption">개발 기록 기준 (2026.09.10) · 콘텐츠 의미 · 영상 재생 · 이용 조건 검토 후 공개 예정</p>
+          <div class="card-tech">
+            <span class="tech-tag">Next.js 16.2</span><span class="tech-tag">React 19.2</span><span class="tech-tag">TypeScript 6.0</span><span class="tech-tag">Prisma 6.19</span><span class="tech-tag">PostgreSQL(Supabase)</span><span class="tech-tag">pg_trgm</span><span class="tech-tag">Vitest 4.1</span>
+          </div>
+          <button class="card-more card-more-dialog" type="button" data-project-dialog="sudamWebDialog" aria-haspopup="dialog" aria-controls="sudamWebDialog">
+            <span class="card-more-label">자세히 보기</span>
+            <svg class="card-more-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg>
+          </button>
+        </article>
+
+        <article class="project-card">
+          <div class="card-head">
+            <div>
               <p class="card-period">2025.07 ~ 2025.09 · 7인 팀 프로젝트 · 팀장</p>
               <h3 class="card-title"><img class="card-title-icon" src="assets/icon-sudam.png" alt="">수담(手談) | 실시간 양방향 수어 인식 · 번역 서비스</h3>
             </div>
@@ -503,6 +531,7 @@
             <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/nestjs/E0234E" alt="" loading="lazy" onerror="this.remove()"><span>NestJS 11</span></li>
             <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/pytest/0A9EDC" alt="" loading="lazy" onerror="this.remove()"><span>pytest 8.3</span></li>
             <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/jest/C21325" alt="" loading="lazy" onerror="this.remove()"><span>Jest 29</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/vitest/6E9F18" alt="" loading="lazy" onerror="this.remove()"><span>Vitest 4.1</span></li>
             <li class="chip"><span class="chip-icon chip-icon-symbol" aria-hidden="true">🕷</span><span>Supertest</span></li>
             <li class="chip"><img class="chip-icon" src="assets/tech/testcontainers.png" alt="" loading="lazy"><span>Testcontainers 12</span></li>
           </ul>
@@ -1155,6 +1184,106 @@
             <span class="case-role-number">03</span>
             <h4>남은 검증</h4>
             <p>장면 선택의 편집 품질, 어절 단위 음성 동기화의 정량 평가, 4시간 · 12GiB 한도의 부하 시험은 아직 별도 확인이 필요합니다.</p>
+          </article>
+        </div>
+      </section>
+    </div>
+  </div>
+</dialog>
+
+<dialog class="project-dialog" id="sudamWebDialog" aria-labelledby="sudamWebDialogTitle">
+  <div class="project-dialog-shell">
+    <header class="project-dialog-header">
+      <div class="project-dialog-heading">
+        <img class="project-dialog-logo" src="assets/icon-sudam-web.svg" alt="수담 웹 아이콘" loading="lazy" decoding="async">
+        <div>
+          <p class="project-dialog-eyebrow">PROJECT CASE STUDY</p>
+          <h2 id="sudamWebDialogTitle">수담 웹 (SuDam)</h2>
+        </div>
+      </div>
+      <button class="project-dialog-close" type="button" data-dialog-close aria-label="수담 웹 상세 닫기">×</button>
+    </header>
+
+    <div class="project-dialog-body">
+      <section class="case-hero" aria-labelledby="sudamWebCaseHeadline">
+        <div class="case-hero-copy">
+          <div class="case-meta-row">
+            <span>2026.05–진행 중 · 출시 전</span>
+            <span>1인 개인 프로젝트</span>
+            <span>Codex 하네스 엔지니어링</span>
+          </div>
+          <p class="case-kicker">한국수어 초보 학습 웹 서비스</p>
+          <h3 id="sudamWebCaseHeadline">공공 수어 데이터를 초보자가 믿고 배울 수 있는 콘텐츠로 다듬고 있습니다.</h3>
+          <p class="case-lead">한국어 단어 · 표현을 검색하면 관련 한국수어 영상과 설명, 퀴즈, 복습으로 이어지는 모바일 우선 웹 서비스입니다. Next.js Route Handlers · Prisma · PostgreSQL로 만들고, 공공데이터 수집부터 품질 감사 · 정정까지 데이터가 화면에 닿는 경로를 안전하게 만드는 데 집중했습니다.</p>
+        </div>
+        <img class="case-mascot case-project-icon" src="assets/icon-sudam-web.svg" alt="손 모양의 수담 웹 아이콘" loading="lazy" decoding="async">
+      </section>
+
+      <div class="case-metrics" aria-label="수담 웹 주요 지표">
+        <div><strong>11,157건</strong><span>수집 수어 데이터</span></div>
+        <div><strong>7,054건</strong><span>설명 오류 정정</span></div>
+        <div><strong>408개</strong><span>자동화 테스트</span></div>
+        <div><strong>19단계</strong><span>phase별 개발 기록</span></div>
+      </div>
+
+      <section class="case-section" aria-labelledby="sudamWebFlowTitle">
+        <div class="case-section-heading">
+          <p class="case-section-index">01 · LEARNING FLOW</p>
+          <h3 id="sudamWebFlowTitle">찾기에서 복습까지 한 흐름으로</h3>
+          <p>하단 내비게이션을 찾기 · 퀴즈 · 내 학습 3개로 줄였습니다. 360 · 768 · 1280px 화면을 실제 브라우저로 확인하고 키보드 · 초점 · 명도 대비(WCAG AA) 등 접근성을 점검했습니다.</p>
+        </div>
+        <div class="case-flow-list case-flow-list-four" aria-label="수담 웹 학습 흐름">
+          <article><span>01</span><strong>찾기</strong><p>정확 일치 · 별칭 · 기본형 · 예문 · trigram 유사도 · 추천어 순으로 매칭</p></article>
+          <article><span>02</span><strong>수어 상세</strong><p>영상을 먼저 보여 주고 수형 설명 · 출처 · 권리 정보 표시</p></article>
+          <article><span>03</span><strong>퀴즈</strong><p>난이도 · 범위를 골라 5문제, 서버 채점과 정답 피드백</p></article>
+          <article><span>04</span><strong>내 학습</strong><p>로그인 없이 복습 · 저장 · 최근 기록</p></article>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="sudamWebDataTitle">
+        <div class="case-section-heading">
+          <p class="case-section-index">02 · DATA PIPELINE</p>
+          <h3 id="sudamWebDataTitle">데이터를 넣는 것만큼, 잘못 들어간 데이터를 안전하게 고치는 데 집중했습니다.</h3>
+        </div>
+        <div class="case-role-grid">
+          <article>
+            <span class="case-role-number">01</span>
+            <h4>공공데이터 적재</h4>
+            <p>일상생활수어 · 전문용어수어 공공 API를 source별 키로 수집합니다. 기본 실행은 DB에 쓰지 않는 dry-run 보고서이고, 실제 쓰기는 페이지 단위 트랜잭션으로 나눠 실패하면 롤백합니다. 원본 JSON을 보존하고, source key 유니크 제약과 적재 후 검증(행 수 · 이상 텍스트 · trigram 인덱스)으로 중복과 누락을 확인했습니다.</p>
+          </article>
+          <article>
+            <span class="case-role-number">02</span>
+            <h4>전수 감사로 원인까지</h4>
+            <p>읽기 전용 감사에서 설명란에 영상 URL이 들어간 7,054건(63.22%)을 찾았습니다. 원본 설명이 비어 있으면 영상 주소가 담긴 보조 필드로 채우던 수집 · 미리보기 코드의 fallback이 원인이었고, 설명 정제 함수를 하나로 합쳐 재발 경로를 막은 뒤 회귀 테스트 72개를 추가했습니다.</p>
+          </article>
+          <article>
+            <span class="case-role-number">03</span>
+            <h4>백업 · 검증 후 정정</h4>
+            <p>대상 7,054행을 백업하고 행별 MD5 · 전체 SHA-256으로 확인했습니다. 실행 직전 대상 행과 연결된 DB를 다시 대조하고, 한 트랜잭션 안에서 정정 · 검증했습니다. 재실행하면 추가 변경은 0건이고, 되돌리기 가능 여부는 미리보기로 확인했습니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section" aria-labelledby="sudamWebSafetyTitle">
+        <div class="case-section-heading">
+          <p class="case-section-index">03 · SAFETY &amp; PROCESS</p>
+          <h3 id="sudamWebSafetyTitle">정답과 비공개 콘텐츠가 새지 않게 막고, 검증 기록을 남겼습니다.</h3>
+        </div>
+        <div class="case-role-grid">
+          <article>
+            <span class="case-role-number">01</span>
+            <h4>서버 채점 · 공개 범위 가드</h4>
+            <p>퀴즈 정답 참조는 서버 비밀키로 AES-256-GCM 인증 암호화한 토큰으로만 전달하고, 채점은 서버에서 합니다. 공개 경로의 조회 조건을 한곳에 모아 비공개 콘텐츠 노출을 막고, 운영 환경에서 비밀키가 없거나 개발용 값 · 32자 미만이면 실패하게 했습니다.</p>
+          </article>
+          <article>
+            <span class="case-role-number">02</span>
+            <h4>AI 에이전트 하네스</h4>
+            <p><code>AGENTS.md</code>와 PRD · 아키텍처 · API · DB 규칙 문서, phase별 목표 · 범위 · 완료 기준을 먼저 정하고 Codex가 그 기준 안에서 구현하게 했습니다. 각 phase는 typecheck · lint · 테스트 · 빌드 결과와 남은 확인 사항을 기록해야 끝납니다. 최근 기록은 43개 파일 · 408개 테스트 통과입니다.</p>
+          </article>
+          <article>
+            <span class="case-role-number">03</span>
+            <h4>출시 전 남은 일</h4>
+            <p>수집한 콘텐츠는 아직 모두 비공개(draft)입니다. 초보자용 첫 30개 표현의 의미 검토, 실제 브라우저 영상 재생, 영상별 이용 조건 확인을 마친 뒤에만 공개로 전환합니다.</p>
           </article>
         </div>
       </section>
