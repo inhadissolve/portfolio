@@ -142,6 +142,8 @@
     window.setTimeout(function () { finishProjectDialogClose(dialog); }, DIALOG_CLOSE_DURATION);
   }
 
+  var boundDialogs = [];
+
   dialogTriggers.forEach(function (trigger) {
     var dialogId = trigger.getAttribute("data-project-dialog");
     var dialog = dialogId ? document.getElementById(dialogId) : null;
@@ -161,6 +163,10 @@
       var closeButton = dialog.querySelector("[data-dialog-close]");
       if (closeButton) closeButton.focus();
     });
+
+    // A dialog can be opened from several places (project card, award card); bind its own handlers once.
+    if (boundDialogs.indexOf(dialog) !== -1) return;
+    boundDialogs.push(dialog);
 
     dialog.querySelectorAll("[data-dialog-close]").forEach(function (button) {
       button.addEventListener("click", function () { closeProjectDialog(dialog); });

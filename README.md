@@ -1,6 +1,6 @@
-# 김찬혁 | Backend Developer Portfolio
+# 김찬혁 | 백엔드에 강한 풀스택 개발자 포트폴리오
 
-> API 설계부터 트래픽 산정, 테스트, 배포와 운영까지 연결하는 백엔드 개발자입니다.
+> 기획부터 화면 · 서버 · 운영까지 직접 만들고, 그중 백엔드(트래픽 · 비용 산정, 테스트, 인프라)에 강점이 있는 개발자입니다.
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-3457FF?style=for-the-badge&logo=githubpages&logoColor=white)](https://inhadissolve.github.io/portfolio/)
 [![Resume PDF](https://img.shields.io/badge/Resume-PDF-EF4444?style=for-the-badge)](https://inhadissolve.github.io/portfolio/assets/resume.pdf?v=20260901)
@@ -11,13 +11,13 @@
 
 <p align="center">
   <a href="https://inhadissolve.github.io/portfolio/">
-    <img src="assets/og-image.png" alt="김찬혁 백엔드 개발자 포트폴리오 미리보기" width="900">
+    <img src="assets/og-image.png" alt="김찬혁 백엔드에 강한 풀스택 개발자 포트폴리오 미리보기" width="900">
   </a>
 </p>
 
 ## 포트폴리오 소개
 
-순수 HTML · CSS · JavaScript로 만든 반응형 1페이지 포트폴리오입니다. 프로젝트 카드의 **자세히 보기**를 누르면 실제 화면, 아키텍처, 문제 해결 과정과 성과를 프로젝트별 사례 연구 형태로 확인할 수 있습니다.
+순수 HTML · CSS · JavaScript로 만든 반응형 1페이지 포트폴리오입니다. 첫 화면 바로 아래에 수상 6회(1위 3회)를 두고, 각 수상 카드에서 해당 프로젝트 상세로 바로 이동할 수 있습니다. 프로젝트 카드의 **자세히 보기**를 누르면 실제 화면, 아키텍처, 문제 해결 과정과 성과를 프로젝트별 사례 연구 형태로 확인할 수 있습니다.
 
 - FastAPI · NestJS · PostgreSQL 기반 API와 데이터 모델 설계
 - 서버리스 커넥션 상한, 폴링 기반 요청량, 컴퓨트 예산을 함께 고려한 운영 설계

@@ -1033,19 +1033,74 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
 .other-link:hover { text-decoration: underline; }
 
 /* ---------- Awards ---------- */
-.awards-list { display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2.5rem; }
-.award-item {
+.section-lead {
+  max-width: 720px;
+  margin: -2rem 0 2.4rem;
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.award-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+.award-card {
   display: flex;
-  align-items: center;
-  gap: 1.1rem;
-  padding: 1.2rem 1.4rem;
+  flex-direction: column;
+  gap: .45rem;
+  min-width: 0;
+  padding: 1.35rem 1.4rem;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
+  transition: transform .2s var(--ease), border-color .2s var(--ease), box-shadow .2s var(--ease);
 }
-.award-icon { font-size: 1.5rem; flex-shrink: 0; }
-.award-title { font-size: .96rem; margin-bottom: .2rem; }
-.award-date { font-size: .8rem; color: var(--text-muted); }
+.award-card:hover { transform: translateY(-3px); border-color: var(--accent); box-shadow: var(--shadow-md); }
+.award-card-top {
+  background: linear-gradient(160deg, var(--accent-soft), var(--surface) 72%);
+  border-color: color-mix(in srgb, var(--accent) 35%, var(--border));
+}
+.award-rank {
+  align-self: flex-start;
+  padding: .3rem .65rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: .74rem;
+  font-weight: 800;
+}
+.award-card-top .award-rank { background: var(--accent); color: #fff; }
+.award-card-title { margin-top: .35rem; font-size: 1.02rem; font-weight: 800; line-height: 1.4; word-break: keep-all; }
+.award-card-project { font-size: .86rem; color: var(--text); }
+.award-card-date { font-size: .78rem; color: var(--text-muted); }
+.award-card-link {
+  align-self: flex-start;
+  margin-top: auto;
+  padding: .6rem 0 0;
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  font-size: .84rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.award-card-link:hover { text-decoration: underline; }
+
+.skill-badge {
+  margin-left: .45rem;
+  padding: .15rem .45rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-size: .66rem;
+  letter-spacing: .02em;
+  vertical-align: 1px;
+}
+[data-theme="dark"] .award-card-top .award-rank,
+[data-theme="dark"] .skill-badge { color: #0a0d1a; }
 
 .award-evidence { margin-bottom: 2.5rem; }
 .award-evidence-heading { margin-bottom: 1.2rem; }
@@ -1252,6 +1307,7 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
   .case-plot-grid { grid-template-columns: repeat(2, 1fr); }
   .case-award-section { grid-template-columns: 1fr; }
   .award-evidence-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .award-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 720px) {
@@ -1276,6 +1332,8 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
 }
 
 @media (max-width: 560px) {
+  .award-grid { grid-template-columns: 1fr; }
+  .section-lead { margin-top: -2.2rem; font-size: .92rem; }
   .skills-grid { grid-template-columns: 1fr 1fr; }
   .skill-card { padding: 1rem; }
   .other-projects-grid { grid-template-columns: 1fr; }

@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>김찬혁 | Backend Developer Portfolio</title>
-<meta name="description" content="트래픽 설계와 장애 대응까지 책임지는 백엔드 개발자 김찬혁의 포트폴리오. FastAPI · NestJS · PostgreSQL 기반 실사용 서비스와 AWS 인프라 운영 경험을 소개합니다.">
+<title>김찬혁 | 백엔드에 강한 풀스택 개발자 포트폴리오</title>
+<meta name="description" content="기획부터 화면 · 서버 · 운영까지 직접 만드는, 백엔드에 강한 풀스택 개발자 김찬혁의 포트폴리오. 1위 3회를 포함한 수상 6회와 React · FastAPI · NestJS · PostgreSQL · AWS 기반 실사용 서비스 경험을 소개합니다.">
 <meta name="theme-color" content="#3457ff">
 <meta name="color-scheme" content="light dark">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="김찬혁 | Backend Developer Portfolio">
-<meta property="og:description" content="트래픽 설계와 장애 대응까지 책임지는 백엔드 개발자 김찬혁의 포트폴리오. FastAPI · NestJS · PostgreSQL 기반 실사용 서비스와 AWS 인프라 운영 경험을 소개합니다.">
+<meta property="og:title" content="김찬혁 | 백엔드에 강한 풀스택 개발자 포트폴리오">
+<meta property="og:description" content="기획부터 화면 · 서버 · 운영까지 직접 만드는, 백엔드에 강한 풀스택 개발자 김찬혁의 포트폴리오. 1위 3회를 포함한 수상 6회와 React · FastAPI · NestJS · PostgreSQL · AWS 기반 실사용 서비스 경험을 소개합니다.">
 <meta property="og:image" content="assets/og-image.png">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="김찬혁 | Backend Developer Portfolio">
-<meta name="twitter:description" content="트래픽 설계와 장애 대응까지 책임지는 백엔드 개발자 김찬혁의 포트폴리오">
+<meta name="twitter:title" content="김찬혁 | 백엔드에 강한 풀스택 개발자 포트폴리오">
+<meta name="twitter:description" content="기획부터 화면 · 서버 · 운영까지 직접 만드는, 백엔드에 강한 풀스택 개발자 김찬혁의 포트폴리오">
 <meta name="twitter:image" content="assets/og-image.png">
 
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -24,7 +24,7 @@
 
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard.css">
-<link rel="stylesheet" href="css/style.css?v=20260901-1">
+<link rel="stylesheet" href="css/style.css?v=20260928-1">
 
 <script type="application/ld+json">
 {
@@ -32,7 +32,7 @@
   "@type": "Person",
   "name": "김찬혁",
   "alternateName": "Chanhyeok Kim",
-  "jobTitle": "Backend Developer",
+  "jobTitle": "Full-Stack Developer (Backend)",
   "email": "mailto:dissolve1882@naver.com",
   "url": "https://github.com/inhadissolve",
   "sameAs": [
@@ -54,11 +54,11 @@
     <a href="#home" class="logo">CH<span>.</span></a>
 
     <nav class="nav-links" id="navLinks" aria-label="주요 메뉴">
-      <a href="#about" data-nav>About</a>
+      <a href="#awards" data-nav>Awards</a>
+      <a href="#projects" data-nav>Projects</a>
       <a href="#skills" data-nav>Skills</a>
       <a href="#experience" data-nav>Experience</a>
-      <a href="#projects" data-nav>Projects</a>
-      <a href="#awards" data-nav>Awards</a>
+      <a href="#about" data-nav>About</a>
       <a href="#contact" data-nav>Contact</a>
     </nav>
 
@@ -76,9 +76,13 @@
 
 <nav class="section-dots" id="sectionDots" aria-label="섹션 바로가기">
   <span class="section-dots-track" aria-hidden="true"><span class="section-dots-fill" id="dotsFill"></span></span>
-  <a href="#about" class="dot-link" data-dot>
+  <a href="#awards" class="dot-link" data-dot>
     <span class="dot"></span>
-    <span class="dot-label">About</span>
+    <span class="dot-label">Awards</span>
+  </a>
+  <a href="#projects" class="dot-link" data-dot>
+    <span class="dot"></span>
+    <span class="dot-label">Projects</span>
   </a>
   <a href="#skills" class="dot-link" data-dot>
     <span class="dot"></span>
@@ -88,13 +92,9 @@
     <span class="dot"></span>
     <span class="dot-label">Experience</span>
   </a>
-  <a href="#projects" class="dot-link" data-dot>
+  <a href="#about" class="dot-link" data-dot>
     <span class="dot"></span>
-    <span class="dot-label">Projects</span>
-  </a>
-  <a href="#awards" class="dot-link" data-dot>
-    <span class="dot"></span>
-    <span class="dot-label">Awards</span>
+    <span class="dot-label">About</span>
   </a>
   <a href="#contact" class="dot-link" data-dot>
     <span class="dot"></span>
@@ -113,12 +113,12 @@
     </div>
 
     <div class="container hero-inner">
-      <p class="eyebrow reveal">BACKEND DEVELOPER</p>
-      <h1 class="hero-title reveal">트래픽과 장애까지 책임지는<br><span class="text-accent">백엔드 개발자</span>, 김찬혁입니다.</h1>
-      <p class="hero-sub reveal">FastAPI · NestJS · PostgreSQL로 API를 설계하고, 서버리스 커넥션과 폴링 부하를 계산해 트래픽을 대비하며, 장애가 나면 원인을 추적해 <strong>재발까지 막는</strong> 개발을 지향합니다.</p>
+      <p class="eyebrow reveal">FULL-STACK DEVELOPER · BACKEND</p>
+      <h1 class="hero-title reveal">기획부터 운영까지 직접 만드는<br><span class="text-accent">백엔드에 강한 풀스택 개발자</span>, 김찬혁입니다.</h1>
+      <p class="hero-sub reveal">React · Next.js 화면부터 FastAPI · NestJS API, AWS · Terraform 인프라, OpenAI 연동까지 직접 만들어 실사용자 대상으로 운영해 왔습니다. 그중 강점은 백엔드입니다. 트래픽과 비용을 계산해 대비하고, 테스트로 <strong>재발까지 막는</strong> 개발을 합니다.</p>
 
       <div class="hero-cta reveal">
-        <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+        <a href="#awards" class="btn btn-primary">수상 · 프로젝트 보기</a>
         <a href="assets/resume.pdf?v=20260901" download="김찬혁_이력서.pdf" class="btn btn-outline">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"></path><path d="m7 11 5 5 5-5"></path><path d="M5 21h14"></path></svg>
           이력서 다운로드
@@ -142,215 +142,100 @@
       </div>
 
       <dl class="hero-stats reveal">
+        <div><dt>6회</dt><dd>수상 · 1위 3회</dd></div>
         <div><dt>449명</dt><dd>실사용 회원</dd></div>
         <div><dt>1,016개</dt><dd>자동화 테스트</dd></div>
-        <div><dt>6회</dt><dd>수상 실적</dd></div>
       </dl>
     </div>
 
-    <a href="#about" class="scroll-cue" aria-label="아래로 스크롤">
+    <a href="#awards" class="scroll-cue" aria-label="아래로 스크롤">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v15"></path><path d="m5 12 7 7 7-7"></path></svg>
     </a>
   </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="section">
+  <!-- AWARDS -->
+  <section id="awards" class="section">
     <div class="container">
-      <p class="eyebrow reveal">ABOUT ME</p>
-      <h2 class="section-title reveal">개발자 김찬혁을 소개합니다</h2>
+      <p class="eyebrow reveal">AWARDS</p>
+      <h2 class="section-title reveal">1위 3회를 포함해 6번 수상했습니다</h2>
+      <p class="section-lead reveal">모든 상은 직접 만든 프로젝트에서 나왔습니다. 카드를 누르면 해당 프로젝트를 바로 볼 수 있습니다.</p>
 
-      <div class="about-grid reveal">
-        <div class="about-avatar">
-          <div class="avatar-circle"><img src="assets/profile.jpg" alt="김찬혁"></div>
-          <p class="avatar-caption">인하대학교 재학<br>Backend Developer</p>
+      <div class="award-grid reveal">
+        <article class="award-card award-card-top">
+          <span class="award-rank">1위 · 대상</span>
+          <h3 class="award-card-title">탄소중립 Innovation Academy 5기 기업연계 프로젝트</h3>
+          <p class="award-card-project">RealGain · 산업 데이터 이상탐지 AI · AI/HW 파트</p>
+          <p class="award-card-date">2025.09 ~ 2025.12</p>
+          <button class="award-card-link" type="button" data-project-dialog="realgainDialog" aria-haspopup="dialog" aria-controls="realgainDialog">프로젝트 보기 →</button>
+        </article>
+        <article class="award-card award-card-top">
+          <span class="award-rank">1위 · 최우수상 · 총장상</span>
+          <h3 class="award-card-title">인하대학교 오픈소스 SW 페스티벌</h3>
+          <p class="award-card-project">수담(手談) · 실시간 수어 인식 · 번역 · 팀장</p>
+          <p class="award-card-date">2025.09 ~ 2025.10</p>
+          <button class="award-card-link" type="button" data-project-dialog="sudamDialog" aria-haspopup="dialog" aria-controls="sudamDialog">프로젝트 보기 →</button>
+        </article>
+        <article class="award-card award-card-top">
+          <span class="award-rank">1위 · 대상</span>
+          <h3 class="award-card-title">KSEB 미니프로젝트</h3>
+          <p class="award-card-project">IssueOne · AI 개인 맞춤 뉴스 요약 · AI/BE 담당</p>
+          <p class="award-card-date">2025.03 ~ 2025.06</p>
+          <button class="award-card-link" type="button" data-project-dialog="issueoneDialog" aria-haspopup="dialog" aria-controls="issueoneDialog">프로젝트 보기 →</button>
+        </article>
+        <article class="award-card">
+          <span class="award-rank">3위 · 우수상</span>
+          <h3 class="award-card-title">KSEB 팀 프로젝트</h3>
+          <p class="award-card-project">수담(手談) · 7인 팀 팀장</p>
+          <p class="award-card-date">2025.07 ~ 2025.09</p>
+          <button class="award-card-link" type="button" data-project-dialog="sudamDialog" aria-haspopup="dialog" aria-controls="sudamDialog">프로젝트 보기 →</button>
+        </article>
+        <article class="award-card">
+          <span class="award-rank">개인 선정 · 베스트 챌린저</span>
+          <h3 class="award-card-title">UMC 10th Backend(Node.js) 파트</h3>
+          <p class="award-card-project">HomeFit · 10인 팀 백엔드 팀장</p>
+          <p class="award-card-date">2026.08</p>
+          <button class="award-card-link" type="button" data-project-dialog="homefitDialog" aria-haspopup="dialog" aria-controls="homefitDialog">프로젝트 보기 →</button>
+        </article>
+        <article class="award-card">
+          <span class="award-rank">개인 선정 · 우수 교육생</span>
+          <h3 class="award-card-title">KSEB 부트캠프 4기</h3>
+          <p class="award-card-project">전체 수료생 중 8명 선정</p>
+          <p class="award-card-date">2025.01 ~ 2025.11</p>
+          <a class="award-card-link" href="#awardEvidenceTitle">증빙 보기 ↓</a>
+        </article>
+      </div>
+
+      <div class="award-evidence reveal" aria-labelledby="awardEvidenceTitle">
+        <div class="award-evidence-heading">
+          <p class="case-section-index">CERTIFICATES</p>
+          <h3 id="awardEvidenceTitle">교육 수료 · 개인 성과</h3>
+          <p>사진이나 상장을 누르면 원본 크기로 확인할 수 있습니다.</p>
         </div>
-
-        <div class="about-content">
-          <blockquote class="about-quote">
-            실사용자가 매일 쓰는 서비스를 혼자 설계하고, 배포하고, 운영해본 백엔드 개발자입니다. 서버리스 환경에서 커넥션 풀과 폴링 부하를 직접 계산해 피크 트래픽을 대비했고, AWS에서는 헬스체크 기반 자동 복구 인프라를 구성하고 현장 운영의 접속 불가 경험을 기록했습니다. 기능 구현 이후에도 트래픽과 비용, 장애 관측성을 함께 책임지는 개발을 지향합니다. 서비스 규모가 커지며 성능 · 비용 · 안정성을 함께 고민해야 하는 팀에서, 운영 경험과 검증 가능한 근거로 기여하고 싶습니다.
-          </blockquote>
-
-          <ul class="info-list">
-            <li><span class="info-icon" aria-hidden="true">🏢</span>인하대학교 재학</li>
-            <li><span class="info-icon" aria-hidden="true">📜</span>정보처리기사 취득 예정</li>
-            <li><span class="info-icon" aria-hidden="true">📧</span><a href="mailto:dissolve1882@naver.com">dissolve1882@naver.com</a></li>
-            <li><span class="info-icon" aria-hidden="true">📞</span>010-3738-1882</li>
-            <li><span class="info-icon" aria-hidden="true">🐙</span><a href="https://github.com/inhadissolve" target="_blank" rel="noopener noreferrer">github.com/inhadissolve</a></li>
-            <li><span class="info-icon" aria-hidden="true">✍️</span><a href="https://blog.naver.com/dissolve_chan" target="_blank" rel="noopener noreferrer">blog.naver.com/dissolve_chan</a></li>
-          </ul>
+        <div class="award-evidence-grid">
+          <figure class="award-evidence-card award-evidence-card-photo">
+            <a href="assets/awards/kseb-excellent-trainee.webp" target="_blank" rel="noopener noreferrer" aria-label="KSEB 개인 우수 교육생 시상 사진 원본 보기">
+              <img src="assets/awards/kseb-excellent-trainee.webp" alt="KSEB 부트캠프 개인 우수 교육생으로 선정되어 수상하는 김찬혁" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>KSEB 개인 우수 교육생 시상</strong><span>전체 수료생 중 8명 선정</span></figcaption>
+          </figure>
+          <figure class="award-evidence-card">
+            <a href="assets/awards/kseb-excellent-trainee-certificate.webp" target="_blank" rel="noopener noreferrer" aria-label="KSEB 개인 우수상 상장 원본 보기">
+              <img src="assets/awards/kseb-excellent-trainee-certificate.webp" alt="KSEB 부트캠프 개인 우수상 상장" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>KSEB 개인 우수상</strong><span>교육 참여와 프로젝트 성과 인정</span></figcaption>
+          </figure>
+          <figure class="award-evidence-card">
+            <a href="assets/awards/kseb-completion-certificate.webp" target="_blank" rel="noopener noreferrer" aria-label="KSEB 부트캠프 수료증 원본 보기">
+              <img src="assets/awards/kseb-completion-certificate.webp" alt="K-Software Empowerment Bootcamp 수료증" loading="lazy" decoding="async">
+            </a>
+            <figcaption><strong>KSEB 부트캠프 수료</strong><span>K-Software Empowerment Bootcamp 4기</span></figcaption>
+          </figure>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- SKILLS -->
-  <section id="skills" class="section section-alt">
-    <div class="container">
-      <p class="eyebrow reveal">TECH STACK</p>
-      <h2 class="section-title reveal">기술 스택</h2>
-
-      <div class="skills-grid reveal">
-        <div class="skill-card">
-          <h3 class="skill-title">Language</h3>
-          <ul class="chip-list">
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/python/3776AB" alt="" loading="lazy" onerror="this.remove()"><span>Python 3.10+</span></li>
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/typescript/3178C6" alt="" loading="lazy" onerror="this.remove()"><span>TypeScript 5.9</span></li>
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="" loading="lazy" onerror="this.remove()"><span>JavaScript</span></li>
-          </ul>
-        </div>
-
-        <div class="skill-card">
-          <h3 class="skill-title">Backend</h3>
-          <ul class="chip-list">
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/fastapi/009688" alt="" loading="lazy" onerror="this.remove()"><span>FastAPI 0.140</span></li>
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/nodedotjs/339933" alt="" loading="lazy" onerror="this.remove()"><span>Node.js 22</span></li>
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/express/9aa3b2" alt="" loading="lazy" onerror="this.remove()"><span>Express</span></li>
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/nestjs/E0234E" alt="" loading="lazy" onerror="this.remove()"><span>NestJS 11</span></li>
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/pytest/0A9EDC" alt="" loading="lazy" onerror="this.remove()"><span>pytest 8.3</span></li>
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/jest/C21325" alt="" loading="lazy" onerror="this.remove()"><span>Jest 29</span></li>
-            <li class="chip"><span class="chip-icon chip-icon-symbol" aria-hidden="true">🕷</span><span>Supertest</span></li>
-            <li class="chip"><img class="chip-icon" src="assets/tech/testcontainers.png" alt="" loading="lazy"><span>Testcontainers 12</span></li>
-          </ul>
-        </div>
-
-        <div class="skill-card">
-          <h3 class="skill-title">Database / Infra</h3>
-          <ul class="chip-list">
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/postgresql/4169E1" alt="" loading="lazy" onerror="this.remove()"><span>PostgreSQL 18</span></li>
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/sqlite/003B57" alt="" loading="lazy" onerror="this.remove()"><span>SQLite</span></li>
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/sqlalchemy/D71F00" alt="" loading="lazy" onerror="this.remove()"><span>SQLAlchemy 2.0</span></li>
-            <li class="chip"><span class="chip-icon chip-icon-symbol" aria-hidden="true">⚗</span><span>Alembic</span></li>
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/prisma/9aa3b2" alt="" loading="lazy" onerror="this.remove()"><span>Prisma 6</span></li>
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/docker/2496ED" alt="" loading="lazy" onerror="this.remove()"><span>Docker</span></li>
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/supabase/3FCF8E" alt="" loading="lazy" onerror="this.remove()"><span>Supabase</span></li>
-            <li class="chip"><img class="chip-icon chip-icon-wide" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="" loading="lazy" onerror="this.remove()"><span>AWS</span></li>
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/terraform/844FBA" alt="" loading="lazy" onerror="this.remove()"><span>Terraform 1.8</span></li>
-            <li class="chip"><span class="chip-icon chip-icon-symbol" aria-hidden="true">☁</span><span>CloudWatch</span></li>
-          </ul>
-        </div>
-
-        <div class="skill-card">
-          <h3 class="skill-title">AI / Data</h3>
-          <ul class="chip-list">
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/tensorflow/FF6F00" alt="" loading="lazy" onerror="this.remove()"><span>TensorFlow 2.13</span></li>
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/pandas/9aa3b2" alt="" loading="lazy" onerror="this.remove()"><span>Pandas 2.2</span></li>
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/numpy/9aa3b2" alt="" loading="lazy" onerror="this.remove()"><span>NumPy</span></li>
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/opencv/5C3EE8" alt="" loading="lazy" onerror="this.remove()"><span>OpenCV</span></li>
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/mediapipe/0097A7" alt="" loading="lazy" onerror="this.remove()"><span>MediaPipe 0.10</span></li>
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/huggingface/FFD21E" alt="" loading="lazy" onerror="this.remove()"><span>HuggingFace API</span></li>
-            <li class="chip"><img class="chip-icon chip-icon-monochrome" src="https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/openai.svg" alt="" loading="lazy" onerror="this.remove()"><span>OpenAI SDK 2.53</span></li>
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/pytorch/EE4C2C" alt="" loading="lazy" onerror="this.remove()"><span>PyTorch 2.8</span></li>
-            <li class="chip"><span class="chip-icon chip-icon-symbol" aria-hidden="true">🔥</span><span>torchvision 0.23</span></li>
-          </ul>
-        </div>
-
-        <div class="skill-card">
-          <h3 class="skill-title">Frontend</h3>
-          <ul class="chip-list">
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/react/61DAFB" alt="" loading="lazy" onerror="this.remove()"><span>React 19.2</span></li>
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/nextdotjs/9aa3b2" alt="" loading="lazy" onerror="this.remove()"><span>Next.js 16.2</span></li>
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/vite/646CFF" alt="" loading="lazy" onerror="this.remove()"><span>Vite 7.2</span></li>
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/tailwindcss/38BDF8" alt="" loading="lazy" onerror="this.remove()"><span>TailwindCSS</span></li>
-          </ul>
-        </div>
-
-        <div class="skill-card">
-          <h3 class="skill-title">Tools</h3>
-          <ul class="chip-list">
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/git/F05032" alt="" loading="lazy" onerror="this.remove()"><span>Git</span></li>
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/github/9aa3b2" alt="" loading="lazy" onerror="this.remove()"><span>GitHub</span></li>
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/vercel/9aa3b2" alt="" loading="lazy" onerror="this.remove()"><span>Vercel</span></li>
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/railway/9aa3b2" alt="" loading="lazy" onerror="this.remove()"><span>Railway</span></li>
-            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/githubactions/2088FF" alt="" loading="lazy" onerror="this.remove()"><span>GitHub Actions</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience" class="section">
-    <div class="container">
-      <p class="eyebrow reveal">EXPERIENCE</p>
-      <h2 class="section-title reveal">경험 · 활동</h2>
-
-      <div class="timeline reveal">
-        <div class="timeline-item">
-          <span class="timeline-dot"></span>
-          <div class="timeline-content">
-            <p class="timeline-period">2026.03 ~ 2026.08</p>
-            <h3 class="timeline-title">UMC 10th – Backend(Node.js) 파트 챌린저</h3>
-            <ul class="timeline-list">
-              <li>주차별 Node.js 미션을 완주하고, HomeFit 백엔드 팀장으로 도메인별 API 계약 · PR · Android 연동 일정을 조율</li>
-              <li>NestJS · Prisma 기반 개발에서 Railway 배포, AWS Terraform · GitHub Actions OIDC · RDS 데이터 이관까지 서비스 생명주기를 경험</li>
-              <li>2026.08.22 부산 BEXCO 데모데이에서 방문자 대상 HomeFit 서비스를 운영</li>
-            </ul>
-            <p class="callout">🏅 프로젝트 리딩과 UMC 활동 성과를 인정받아 <strong>UMC 10th Backend(Node.js) 파트 베스트 챌린저</strong>로 개인 선정되었습니다.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <span class="timeline-dot"></span>
-          <div class="timeline-content">
-            <p class="timeline-period">2025.09 ~ 2025.12</p>
-            <h3 class="timeline-title">🏆 탄소중립 Innovation Academy 5기 · 기업연계 프로젝트</h3>
-            <ul class="timeline-list">
-              <li>산업 설비 진동 · orbit 데이터를 Orbit 이미지로 변환해 ResNet18로 정상/비정상을 분류하는 이상탐지 AI를 AI/HW 파트로 개발</li>
-              <li>Grad-CAM으로 판단 근거를 시각화하고, CLI 기반 --json/--show_cam 옵션으로 백엔드 연동용 추론 모듈 구성</li>
-            </ul>
-            <p class="callout">💡 산업 데이터 기반 AI 모델 개발과 결과 해석 과정을 실전 프로젝트로 경험했고, 그 결과 <strong>대상(1위)</strong>을 수상했습니다.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <span class="timeline-dot"></span>
-          <div class="timeline-content">
-            <p class="timeline-period">2025.09 ~ 2025.10</p>
-            <h3 class="timeline-title">🏅 오픈소스 SW 페스티벌 · 인하대학교 총장상</h3>
-            <ul class="timeline-list">
-              <li>수담(手談) 실시간 양방향 수어 인식 · 번역 서비스로 교내 오픈소스 SW 페스티벌 출전</li>
-              <li>공개 SW 생태계 기여와 실용적인 AI 서비스 구현 역량을 인정받아 최우수상(총장상) 수상</li>
-            </ul>
-            <p class="callout">💡 사회적 약자를 위한 기술 개발이라는 주제 의식과 완성도 있는 구현이 함께 인정받은 수상이었습니다.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <span class="timeline-dot"></span>
-          <div class="timeline-content">
-            <p class="timeline-period">2025.07 ~ 2025.09</p>
-            <h3 class="timeline-title">🥉 KSEB 팀 프로젝트 · 수담(手談)</h3>
-            <ul class="timeline-list">
-              <li>MediaPipe keypoint 추출 → 딥러닝 분류 → FastAPI 추론 서버로 이어지는 AI 파이프라인을 7인 팀 팀장으로서 설계, AI · FE · BE · Unity 파트 일정 조율</li>
-              <li>none 라벨 수집, confidence threshold, sliding window 적용으로 실시간 예측을 안정화해 <strong>우수상(3위)</strong> 수상</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <span class="timeline-dot"></span>
-          <div class="timeline-content">
-            <p class="timeline-period">2025.03 ~ 2025.06</p>
-            <h3 class="timeline-title">🥇 KSEB 미니프로젝트 · IssueOne</h3>
-            <ul class="timeline-list">
-              <li>RSS 수집 → 정제 → 요약 → 응답 파이프라인을 FastAPI+SQLite로 설계 · 구현</li>
-              <li>KoBART 로컬 추론을 HuggingFace/OpenAI API 연계로 전환해 메모리 제약 배포 환경 문제를 해결하고 <strong>대상(1위)</strong> 수상</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <span class="timeline-dot"></span>
-          <div class="timeline-content">
-            <p class="timeline-period">2025.01 ~ 2025.11</p>
-            <h3 class="timeline-title">KSEB 부트캠프 4기 수료</h3>
-            <ul class="timeline-list">
-              <li>1년간 백엔드 개발 역량을 집중적으로 학습, 미니프로젝트 대상 · 팀 프로젝트 우수상 수상</li>
-              <li>꾸준한 참여도를 인정받아 전체 수료생 중 8명 우수 교육생으로 선정</li>
-            </ul>
-            <p class="callout">💡 단일 프로젝트 성과가 아니라 1년간의 학습 태도와 프로젝트 결과 모두를 인정받은 수료였습니다. 꾸준히 완수하는 것이 결국 가장 강한 포트폴리오가 된다는 것을 확인한 경험이었습니다.</p>
-          </div>
-        </div>
+      <div class="education-note reveal">
+        <span class="info-icon" aria-hidden="true">🎓</span>
+        <span><strong>인하대학교</strong> 재학 · 정보처리기사 취득 예정</span>
       </div>
     </div>
   </section>
@@ -601,88 +486,200 @@
     </div>
   </section>
 
-  <!-- AWARDS -->
-  <section id="awards" class="section">
+  <!-- SKILLS -->
+  <section id="skills" class="section">
     <div class="container">
-      <p class="eyebrow reveal">AWARDS</p>
-      <h2 class="section-title reveal">수상 · 성과</h2>
+      <p class="eyebrow reveal">TECH STACK</p>
+      <h2 class="section-title reveal">기술 스택</h2>
+      <p class="section-lead reveal">주력은 백엔드이고, 화면 · 인프라 · AI 연동까지 직접 다룹니다.</p>
 
-      <ul class="awards-list reveal">
-        <li class="award-item">
-          <span class="award-icon">🏅</span>
-          <div>
-            <p class="award-title">UMC 10th Backend(Node.js) 파트 <strong>베스트 챌린저 선정</strong></p>
-            <p class="award-date">2026.08</p>
-          </div>
-        </li>
-        <li class="award-item">
-          <span class="award-icon">🥇</span>
-          <div>
-            <p class="award-title">탄소중립 Innovation Academy 5기 기업연계 프로젝트 <strong>대상 (1위)</strong></p>
-            <p class="award-date">2025.09 ~ 2025.12</p>
-          </div>
-        </li>
-        <li class="award-item">
-          <span class="award-icon">🏅</span>
-          <div>
-            <p class="award-title">오픈소스 SW 페스티벌 <strong>최우수상 · 인하대학교 총장상 (1위)</strong></p>
-            <p class="award-date">2025.09 ~ 2025.10</p>
-          </div>
-        </li>
-        <li class="award-item">
-          <span class="award-icon">🥉</span>
-          <div>
-            <p class="award-title">KSEB 팀 프로젝트 <strong>우수상 (3위)</strong></p>
-            <p class="award-date">2025.07 ~ 2025.09</p>
-          </div>
-        </li>
-        <li class="award-item">
-          <span class="award-icon">🥇</span>
-          <div>
-            <p class="award-title">KSEB 미니프로젝트 <strong>대상 (1위)</strong></p>
-            <p class="award-date">2025.03 ~ 2025.06</p>
-          </div>
-        </li>
-        <li class="award-item">
-          <span class="award-icon">🏆</span>
-          <div>
-            <p class="award-title">KSEB 부트캠프 4기 <strong>개인 우수 교육생</strong> · 전체 수료생 중 8명 선정</p>
-            <p class="award-date">2025.01 ~ 2025.11</p>
-          </div>
-        </li>
-      </ul>
-
-      <div class="award-evidence reveal" aria-labelledby="awardEvidenceTitle">
-        <div class="award-evidence-heading">
-          <p class="case-section-index">CERTIFICATES</p>
-          <h3 id="awardEvidenceTitle">교육 수료 · 개인 성과</h3>
-          <p>사진이나 상장을 누르면 원본 크기로 확인할 수 있습니다.</p>
+      <div class="skills-grid reveal">
+        <div class="skill-card">
+          <h3 class="skill-title">Backend<span class="skill-badge">주력</span></h3>
+          <ul class="chip-list">
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/fastapi/009688" alt="" loading="lazy" onerror="this.remove()"><span>FastAPI 0.140</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/nodedotjs/339933" alt="" loading="lazy" onerror="this.remove()"><span>Node.js 22</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/express/9aa3b2" alt="" loading="lazy" onerror="this.remove()"><span>Express</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/nestjs/E0234E" alt="" loading="lazy" onerror="this.remove()"><span>NestJS 11</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/pytest/0A9EDC" alt="" loading="lazy" onerror="this.remove()"><span>pytest 8.3</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/jest/C21325" alt="" loading="lazy" onerror="this.remove()"><span>Jest 29</span></li>
+            <li class="chip"><span class="chip-icon chip-icon-symbol" aria-hidden="true">🕷</span><span>Supertest</span></li>
+            <li class="chip"><img class="chip-icon" src="assets/tech/testcontainers.png" alt="" loading="lazy"><span>Testcontainers 12</span></li>
+          </ul>
         </div>
-        <div class="award-evidence-grid">
-          <figure class="award-evidence-card award-evidence-card-photo">
-            <a href="assets/awards/kseb-excellent-trainee.webp" target="_blank" rel="noopener noreferrer" aria-label="KSEB 개인 우수 교육생 시상 사진 원본 보기">
-              <img src="assets/awards/kseb-excellent-trainee.webp" alt="KSEB 부트캠프 개인 우수 교육생으로 선정되어 수상하는 김찬혁" loading="lazy" decoding="async">
-            </a>
-            <figcaption><strong>KSEB 개인 우수 교육생 시상</strong><span>전체 수료생 중 8명 선정</span></figcaption>
-          </figure>
-          <figure class="award-evidence-card">
-            <a href="assets/awards/kseb-excellent-trainee-certificate.webp" target="_blank" rel="noopener noreferrer" aria-label="KSEB 개인 우수상 상장 원본 보기">
-              <img src="assets/awards/kseb-excellent-trainee-certificate.webp" alt="KSEB 부트캠프 개인 우수상 상장" loading="lazy" decoding="async">
-            </a>
-            <figcaption><strong>KSEB 개인 우수상</strong><span>교육 참여와 프로젝트 성과 인정</span></figcaption>
-          </figure>
-          <figure class="award-evidence-card">
-            <a href="assets/awards/kseb-completion-certificate.webp" target="_blank" rel="noopener noreferrer" aria-label="KSEB 부트캠프 수료증 원본 보기">
-              <img src="assets/awards/kseb-completion-certificate.webp" alt="K-Software Empowerment Bootcamp 수료증" loading="lazy" decoding="async">
-            </a>
-            <figcaption><strong>KSEB 부트캠프 수료</strong><span>K-Software Empowerment Bootcamp 4기</span></figcaption>
-          </figure>
+        <div class="skill-card">
+          <h3 class="skill-title">Database / Infra</h3>
+          <ul class="chip-list">
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/postgresql/4169E1" alt="" loading="lazy" onerror="this.remove()"><span>PostgreSQL 18</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/sqlite/003B57" alt="" loading="lazy" onerror="this.remove()"><span>SQLite</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/sqlalchemy/D71F00" alt="" loading="lazy" onerror="this.remove()"><span>SQLAlchemy 2.0</span></li>
+            <li class="chip"><span class="chip-icon chip-icon-symbol" aria-hidden="true">⚗</span><span>Alembic</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/prisma/9aa3b2" alt="" loading="lazy" onerror="this.remove()"><span>Prisma 6</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/docker/2496ED" alt="" loading="lazy" onerror="this.remove()"><span>Docker</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/supabase/3FCF8E" alt="" loading="lazy" onerror="this.remove()"><span>Supabase</span></li>
+            <li class="chip"><img class="chip-icon chip-icon-wide" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="" loading="lazy" onerror="this.remove()"><span>AWS</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/terraform/844FBA" alt="" loading="lazy" onerror="this.remove()"><span>Terraform 1.8</span></li>
+            <li class="chip"><span class="chip-icon chip-icon-symbol" aria-hidden="true">☁</span><span>CloudWatch</span></li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3 class="skill-title">Frontend</h3>
+          <ul class="chip-list">
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/react/61DAFB" alt="" loading="lazy" onerror="this.remove()"><span>React 19.2</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/nextdotjs/9aa3b2" alt="" loading="lazy" onerror="this.remove()"><span>Next.js 16.2</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/vite/646CFF" alt="" loading="lazy" onerror="this.remove()"><span>Vite 7.2</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/tailwindcss/38BDF8" alt="" loading="lazy" onerror="this.remove()"><span>TailwindCSS</span></li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3 class="skill-title">AI / Data</h3>
+          <ul class="chip-list">
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/tensorflow/FF6F00" alt="" loading="lazy" onerror="this.remove()"><span>TensorFlow 2.13</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/pandas/9aa3b2" alt="" loading="lazy" onerror="this.remove()"><span>Pandas 2.2</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/numpy/9aa3b2" alt="" loading="lazy" onerror="this.remove()"><span>NumPy</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/opencv/5C3EE8" alt="" loading="lazy" onerror="this.remove()"><span>OpenCV</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/mediapipe/0097A7" alt="" loading="lazy" onerror="this.remove()"><span>MediaPipe 0.10</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/huggingface/FFD21E" alt="" loading="lazy" onerror="this.remove()"><span>HuggingFace API</span></li>
+            <li class="chip"><img class="chip-icon chip-icon-monochrome" src="https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/openai.svg" alt="" loading="lazy" onerror="this.remove()"><span>OpenAI SDK 2.53</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/pytorch/EE4C2C" alt="" loading="lazy" onerror="this.remove()"><span>PyTorch 2.8</span></li>
+            <li class="chip"><span class="chip-icon chip-icon-symbol" aria-hidden="true">🔥</span><span>torchvision 0.23</span></li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3 class="skill-title">Language</h3>
+          <ul class="chip-list">
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/python/3776AB" alt="" loading="lazy" onerror="this.remove()"><span>Python 3.10+</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/typescript/3178C6" alt="" loading="lazy" onerror="this.remove()"><span>TypeScript 5.9</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="" loading="lazy" onerror="this.remove()"><span>JavaScript</span></li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3 class="skill-title">Tools</h3>
+          <ul class="chip-list">
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/git/F05032" alt="" loading="lazy" onerror="this.remove()"><span>Git</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/github/9aa3b2" alt="" loading="lazy" onerror="this.remove()"><span>GitHub</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/vercel/9aa3b2" alt="" loading="lazy" onerror="this.remove()"><span>Vercel</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/railway/9aa3b2" alt="" loading="lazy" onerror="this.remove()"><span>Railway</span></li>
+            <li class="chip"><img class="chip-icon" src="https://cdn.simpleicons.org/githubactions/2088FF" alt="" loading="lazy" onerror="this.remove()"><span>GitHub Actions</span></li>
+          </ul>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="education-note reveal">
-        <span class="info-icon" aria-hidden="true">🎓</span>
-        <span><strong>인하대학교</strong> 재학 · 정보처리기사 취득 예정</span>
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <p class="eyebrow reveal">EXPERIENCE</p>
+      <h2 class="section-title reveal">경험 · 활동</h2>
+
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-content">
+            <p class="timeline-period">2026.03 ~ 2026.08</p>
+            <h3 class="timeline-title">UMC 10th – Backend(Node.js) 파트 챌린저</h3>
+            <ul class="timeline-list">
+              <li>주차별 Node.js 미션을 완주하고, HomeFit 백엔드 팀장으로 도메인별 API 계약 · PR · Android 연동 일정을 조율</li>
+              <li>NestJS · Prisma 기반 개발에서 Railway 배포, AWS Terraform · GitHub Actions OIDC · RDS 데이터 이관까지 서비스 생명주기를 경험</li>
+              <li>2026.08.22 부산 BEXCO 데모데이에서 방문자 대상 HomeFit 서비스를 운영</li>
+            </ul>
+            <p class="callout">🏅 프로젝트 리딩과 UMC 활동 성과를 인정받아 <strong>UMC 10th Backend(Node.js) 파트 베스트 챌린저</strong>로 개인 선정되었습니다.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-content">
+            <p class="timeline-period">2025.09 ~ 2025.12</p>
+            <h3 class="timeline-title">🏆 탄소중립 Innovation Academy 5기 · 기업연계 프로젝트</h3>
+            <ul class="timeline-list">
+              <li>산업 설비 진동 · orbit 데이터를 Orbit 이미지로 변환해 ResNet18로 정상/비정상을 분류하는 이상탐지 AI를 AI/HW 파트로 개발</li>
+              <li>Grad-CAM으로 판단 근거를 시각화하고, CLI 기반 --json/--show_cam 옵션으로 백엔드 연동용 추론 모듈 구성</li>
+            </ul>
+            <p class="callout">💡 산업 데이터 기반 AI 모델 개발과 결과 해석 과정을 실전 프로젝트로 경험했고, 그 결과 <strong>대상(1위)</strong>을 수상했습니다.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-content">
+            <p class="timeline-period">2025.09 ~ 2025.10</p>
+            <h3 class="timeline-title">🏅 오픈소스 SW 페스티벌 · 인하대학교 총장상</h3>
+            <ul class="timeline-list">
+              <li>수담(手談) 실시간 양방향 수어 인식 · 번역 서비스로 교내 오픈소스 SW 페스티벌 출전</li>
+              <li>공개 SW 생태계 기여와 실용적인 AI 서비스 구현 역량을 인정받아 최우수상(총장상) 수상</li>
+            </ul>
+            <p class="callout">💡 사회적 약자를 위한 기술 개발이라는 주제 의식과 완성도 있는 구현이 함께 인정받은 수상이었습니다.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-content">
+            <p class="timeline-period">2025.07 ~ 2025.09</p>
+            <h3 class="timeline-title">🥉 KSEB 팀 프로젝트 · 수담(手談)</h3>
+            <ul class="timeline-list">
+              <li>MediaPipe keypoint 추출 → 딥러닝 분류 → FastAPI 추론 서버로 이어지는 AI 파이프라인을 7인 팀 팀장으로서 설계, AI · FE · BE · Unity 파트 일정 조율</li>
+              <li>none 라벨 수집, confidence threshold, sliding window 적용으로 실시간 예측을 안정화해 <strong>우수상(3위)</strong> 수상</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-content">
+            <p class="timeline-period">2025.03 ~ 2025.06</p>
+            <h3 class="timeline-title">🥇 KSEB 미니프로젝트 · IssueOne</h3>
+            <ul class="timeline-list">
+              <li>RSS 수집 → 정제 → 요약 → 응답 파이프라인을 FastAPI+SQLite로 설계 · 구현</li>
+              <li>KoBART 로컬 추론을 HuggingFace/OpenAI API 연계로 전환해 메모리 제약 배포 환경 문제를 해결하고 <strong>대상(1위)</strong> 수상</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-content">
+            <p class="timeline-period">2025.01 ~ 2025.11</p>
+            <h3 class="timeline-title">KSEB 부트캠프 4기 수료</h3>
+            <ul class="timeline-list">
+              <li>1년간 백엔드 개발 역량을 집중적으로 학습, 미니프로젝트 대상 · 팀 프로젝트 우수상 수상</li>
+              <li>꾸준한 참여도를 인정받아 전체 수료생 중 8명 우수 교육생으로 선정</li>
+            </ul>
+            <p class="callout">💡 단일 프로젝트 성과가 아니라 1년간의 학습 태도와 프로젝트 결과 모두를 인정받은 수료였습니다. 꾸준히 완수하는 것이 결국 가장 강한 포트폴리오가 된다는 것을 확인한 경험이었습니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <p class="eyebrow reveal">ABOUT ME</p>
+      <h2 class="section-title reveal">개발자 김찬혁을 소개합니다</h2>
+
+      <div class="about-grid reveal">
+        <div class="about-avatar">
+          <div class="avatar-circle"><img src="assets/profile.jpg" alt="김찬혁"></div>
+          <p class="avatar-caption">인하대학교 재학<br>Full-Stack Developer</p>
+        </div>
+
+        <div class="about-content">
+          <blockquote class="about-quote">
+            기획부터 화면 · 서버 · 배포 · 운영까지, 실사용자가 매일 쓰는 서비스를 직접 만들어 본 개발자입니다. 그중 가장 자신 있는 영역은 백엔드입니다. 서버리스 환경에서 커넥션 풀과 폴링 부하를 직접 계산해 피크 트래픽을 대비했고, AWS에서는 헬스체크 기반 자동 복구 인프라를 구성하고 현장 운영의 접속 불가 경험을 기록했습니다. 최근에는 받아쓰기 · 영상 처리 · AI 비용 계측을 묶은 AI 편집 도구를 만들고 있습니다. 한 영역에 머물지 않고 서비스 전체를 이해하는 개발자로서, 성능 · 비용 · 안정성을 함께 고민하는 팀에 검증 가능한 근거로 기여하고 싶습니다.
+          </blockquote>
+
+          <ul class="info-list">
+            <li><span class="info-icon" aria-hidden="true">🏢</span>인하대학교 재학</li>
+            <li><span class="info-icon" aria-hidden="true">📜</span>정보처리기사 취득 예정</li>
+            <li><span class="info-icon" aria-hidden="true">📧</span><a href="mailto:dissolve1882@naver.com">dissolve1882@naver.com</a></li>
+            <li><span class="info-icon" aria-hidden="true">📞</span>010-3738-1882</li>
+            <li><span class="info-icon" aria-hidden="true">🐙</span><a href="https://github.com/inhadissolve" target="_blank" rel="noopener noreferrer">github.com/inhadissolve</a></li>
+            <li><span class="info-icon" aria-hidden="true">✍️</span><a href="https://blog.naver.com/dissolve_chan" target="_blank" rel="noopener noreferrer">blog.naver.com/dissolve_chan</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -1632,6 +1629,6 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=20260827-1"></script>
+<script src="js/main.js?v=20260928-1"></script>
 </body>
 </html>
